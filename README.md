@@ -1,4 +1,4 @@
-<ins>Background</ins>
+**<ins>Background</ins>**
 
 Dungeons & Dragons is a fantasy tabletop role-playing game originally designed by Gary Gygax and Dave Arneson. The classic tabletop RPG is a collaborative story telling where one player takes on the role of the Dungeon Master (DM) while the others each control their own player character (PC). Typically a party of players are composed of characters that each have their unique area of specialties. Each character is unique and their composition of various factors such as skills, class, or race allows players to have a large amount of freedom in how they would like to progress their campaign. 
 
@@ -6,7 +6,7 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 <br>
 
-Functionality & MVPs
+**<ins>Functionality & MVPs</ins>**
 
 - Character Input fields that a player can edit.
 - Character Sheet updates when level or attribute point changes.
@@ -20,7 +20,7 @@ In addtion, this project will include:
 
 <br>
 
-Wireframes
+**<ins>Wireframes</ins>**
 
 ![Screenshot from 2022-09-15 21-17-50](https://user-images.githubusercontent.com/103459101/190535858-2ae6df25-e632-4a3a-b017-77c2a201215e.png)
 
@@ -31,7 +31,7 @@ Wireframes
 
 <br>
 
-Technologies, Libraries, and APIs
+**<ins>Technologies, Libraries, and APIs</ins>**
 
 This project will be implemented with the following technologies:
 - The 5th Edition Dungeons and Dragons API: https://www.dnd5eapi.co/
@@ -40,7 +40,8 @@ This project will be implemented with the following technologies:
 
 <br>
 
-Implementation Timeline
+**<ins>Implementation Timeline</ins>**
+
 - Friday Afternoon & Weekend: Setup project, including getting webpack up and running. Design structure of character sheet and implement the stucture via HTML and implement basic tool tip hover effect. If time, also work on additional CSS properties to beautify webpage.
 
 - Monday: Implement forms and AJAX that will allow the web page to save user inputted information without having the page reload.
@@ -53,7 +54,7 @@ Thursday: Deploy to GitHub pages. If time, rewrite this proposal as a production
 
 <br>
 
-Bonus features:
+**<ins>Bonus features:</ins>**
 
 There are many sections on a character sheet that can be included that may not have an effect on overall gameplay. Some of these seections are: 
 
