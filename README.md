@@ -22,6 +22,7 @@ In addtion, this project will include:
 
 Wireframes
 
+![Screenshot from 2022-09-15 21-14-02](https://user-images.githubusercontent.com/103459101/190535473-12007303-86bc-4635-844c-fa38d9cfaa5c.png)
 
 
 <br>
