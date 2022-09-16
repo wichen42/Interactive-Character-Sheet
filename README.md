@@ -4,10 +4,12 @@ Dungeons & Dragons is a fantasy tabletop role-playing game originally designed b
 
 Before the campaign begins DMs and players will often have a Session 0, where the players first create their character. Players will have to choose a race, class, starting class skills, proficiencies, generate their starting stat points, and more. All of these attributes are tracked from the start on a Character Sheet which players will utilize over the course of the campaign to keep track of new skills, items, equipment, notes, and more. The goal of this interactive Character Sheet is to help players better track their PC and also reduce the time spent refering to the Player's handbook by provide helpful tooltips for their character's attributes and skills.
 
+<br>
 
 Functionality & MVPs
 
-- Character Input fields that a user can edit.
+- Character Input fields that a player can edit.
+- Character Sheet updates when level or attribute point changes.
 - Tool tips over character attributes, proficiency, and skills.
 - Character EXP tracker.
 - Character equipment weight tracker.
@@ -16,6 +18,13 @@ In addtion, this project will include:
 - An About Modal describing the API used to generate tooltips.
 - This Production README.
 
+<br>
+
+Wireframes
+
+
+
+<br>
 
 Technologies, Libraries, and APIs
 
@@ -24,6 +33,7 @@ This project will be implemented with the following technologies:
 - Webpack and Babel to bundles and transpile source code.
 - npm to manage dependencies. 
 
+<br>
 
 Implementation Timeline
 - Friday Afternoon & Weekend: Setup project, including getting webpack up and running. Design structure of character sheet and implement the stucture via HTML and implement basic tool tip hover effect. If time, also work on additional CSS properties to beautify webpage.
@@ -36,6 +46,7 @@ Wednesday: Finish implementing EXP, Equipment weight tracker, and CSS Styling. C
 
 Thursday: Deploy to GitHub pages. If time, rewrite this proposal as a production README.
 
+<br>
 
 Bonus features:
 
@@ -44,4 +55,3 @@ There are many sections on a character sheet that can be included that may not h
 - Inventory
 - Character background, inspirations, and motivations
 - Quest Journal
-
