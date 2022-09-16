@@ -22,8 +22,12 @@ In addtion, this project will include:
 
 Wireframes
 
-![Screenshot from 2022-09-15 21-14-02](https://user-images.githubusercontent.com/103459101/190535473-12007303-86bc-4635-844c-fa38d9cfaa5c.png)
+![Screenshot from 2022-09-15 21-17-50](https://user-images.githubusercontent.com/103459101/190535858-2ae6df25-e632-4a3a-b017-77c2a201215e.png)
 
+<br>
+
+- Nav Bar displays links to GitHub, LinkedIn, and AngelList.
+- Player Character Attributes, Saving Throws, HP, AC, Speed, Attacks, Spells, Proficiencies, Bonuses, and Equipments displays hover over tool tips.
 
 <br>
 
