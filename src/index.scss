@@ -1,0 +1,67 @@
+.character-sheet-header {
+    height: 100px;
+    margin: 35px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+#character-name {
+    display: inline-flex;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.character-details {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#character-details-section-1 {
+    display: block;
+    width: 50%;
+}
+
+#character-details-section-2 {
+    display: block;
+    width: 50%;
+}
+
+#character-level {
+    display: inline-flex;
+    width: 19%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#class {
+    width: 100%;
+    height: 50%;
+    display: block;
+    border: 1px solid red;
+}
+
+#background {
+    width: 100%;
+    height: 50%;
+    display: block;
+    border: 1px solid red;
+}
+
+#race {
+    width: 100%;
+    height: 50%;
+    display: block;
+    border: 1px solid red;
+}
+
+#alignment {
+    width: 100%;
+    height: 50%;
+    display: block;
+    border: 1px solid red;
+}
