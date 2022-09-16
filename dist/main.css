@@ -68,3 +68,87 @@
   display: block;
   border: 1px solid red;
 }
+
+.character-sheet-attributes {
+  border: 1px solid red;
+}
+
+#character-details-section-1 {
+  display: inline-flex;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+#character-strength {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#strength-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
+
+#character-dexterity {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#dexterity-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
+
+#character-constitution {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#constitution-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
+
+#character-intelligence {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#intelligence-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
+
+#character-wisdom {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#wisdom-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
+
+#character-charisma {
+  display: inline-block;
+  width: 30%;
+  border: 1px solid red;
+}
+
+#charisma-skills {
+  display: inline-block;
+  width: 69%;
+  border: 1px solid red;
+}
