@@ -1,6 +1,7 @@
 // character attributes bar
 
 #character-sheet-header {
+    display: flex;
     height: 100px;
     margin: 35px;
     border-radius: 25px;
@@ -10,16 +11,14 @@
 #character-name {
     display: inline-flex;
     justify-content: center;
-    width: 30%;
-    height: 100%;
+    flex-grow: 1;
     border: 1px solid red;
 }
 
 .character-details {
     display: inline-flex;
     justify-content: space-evenly;
-    width: 50%;
-    height: 100%;
+    flex-grow: 3;
     border: 1px solid red;
 }
 
@@ -33,10 +32,13 @@
     width: 50%;
 }
 
-#character-level {
+#nav-links {
     display: inline-flex;
-    width: 19%;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-grow: 1;
     border: 1px solid red;
 }
 
@@ -78,6 +80,29 @@
     border: 2px solid black;
 }
 
+// Stats and Modifiers
+
+.stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 15%;
+    height: 35%;
+
+}
+
+.mod {
+    // need to determine height of largest skill block 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
 // Strength
 
 #character-attributes-section-str {
@@ -92,20 +117,6 @@
     border: 1px solid red;
 }
 
-// Strength Stats and Modifiers
-
-#str-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#str-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
-}
 
 // Strength Skills and Saving Throws
 
@@ -134,20 +145,6 @@
 
 #character-attributes-section-dex {
     display: flex;
-}
-// Dexterity Stats and Modifiers
-
-#dex-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#dex-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
 }
 
 // Dexterity Skills and Saving Throws
@@ -178,22 +175,6 @@
     display: flex;
 }
 
-// Constitution Stats and Modifiers 
-
-#con-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#con-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
-}
-
-
 // Constitution Skills and Saving Throws
 
 #character-constitution {
@@ -218,21 +199,6 @@
 
 #character-attributes-section-int {
     display: flex;
-}
-
-// Intelligence Stats and Modifiers
-
-#int-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#int-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
 }
 
 // Intelligence Skills and Saving Throws
@@ -261,21 +227,6 @@
     display: flex;
 }
 
-// Wisdom Stats and Modifiers
-
-#wis-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#wis-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
-}
-
 // Wisdom Skills and Saving Throws
 
 #character-wisdom {
@@ -300,21 +251,6 @@
 
 #character-attributes-section-cha {
     display: flex;
-}
-
-// Charisma Stats and Modifiers
-
-#cha-stat {
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    width: 50px;
-    text-align: center;
-}
-
-#cha-mod {
-    // need to determine height of largest skill block 
-    text-align: center;
 }
 
 // Charisma Skills and Saving Throws
