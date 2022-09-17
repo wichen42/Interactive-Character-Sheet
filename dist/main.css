@@ -74,8 +74,6 @@
 }
 
 #character-details-section-1 {
-  display: inline-flex;
-  justify-content: space-evenly;
   width: 50%;
   height: 100%;
   border: 1px solid red;
@@ -88,9 +86,15 @@
 }
 
 #strength-skills {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   width: 69%;
   border: 1px solid red;
+}
+
+#strength-skills label {
+  display: inline-block;
+  width: 100px;
 }
 
 #character-dexterity {
