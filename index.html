@@ -11,10 +11,9 @@
   </head>
 
   <body>
-    <div class="character-sheet-header">
+    <div id="character-sheet-header">
 
       <section id="character-name">Name (form)</section>
-
       <div class="character-details">
         <div id="character-details-section-1">
           <section id="class">Class (dropdown)</section>
@@ -22,17 +21,18 @@
         </div>
         <div id="character-details-section-2">
           <section id="race">Race (dropdown)</section>
-          <section id="alignment">Alignment (dropdown)</section>  
+          <section id="alignment">Status (dropdown)</section>  
         </div>
       </div>
 
       <section id="character-level">Level 69 (form)</section>
     </div>
 
-    <div class="character-sheet-attributes">
-        <div id="character-attributes-section-1">
+    <div id="character-sheet-attributes">
+        <div id="character-attributes-section-str">
             <section id="character-strength">
-                Strength
+                <section id="str-stat">Stat</section>
+                <section id="str-mod">Modifier</section>
             </section>
 
             <section id="strength-skills">
@@ -51,95 +51,172 @@
             </section>
         </div>
 
-        <div id="character-attributes-section-2">
+        <div id="character-attributes-section-dex">
           <section id="character-dexterity">
-            Dexterity
-          </section>
+            <section id="dex-stat">Stat</section>
+            <section id="dex-mod">Modifier</section>
+        </section>
 
           <section id="dexterity-skills">
-            <input type="checkbox" name="dex-skill" id="acrobatics">
-            <label for="athletics">Acrobatics</label>
-            <input type="checkbox" name="dex-skill" id="sleight-of-hand">
-            <label for="sleight-of-hand">Slieght of Hand</label>
-            <input type="checkbox" name="dex-skill" id="stealth">
-            <label for="stealth">Stealth</label>
-            <input type="checkbox" name="dex-skill" id="dex-saving-throw">
-            <label for="dex-saving-throw">Saving Throw</label>
+            
+            <section id="acrobactics">
+              <label for="acrobatics">Acrobatics</label>
+              <input type="checkbox" name="acrobatics-checkbox" id="acrobatics">
+            </section>
+
+            <section id="sleight-of-hand">
+              <label for="sleight-of-hand">Sleight of Hand</label>
+              <input type="checkbox" name="sleight-of-hand-checkbox" id="sleight-of-hand">
+            </section>
+
+            <section id="stealth ">
+              <label for="stealth">Stealth</label>
+              <input type="checkbox" name="stealth-checkbox" id="stealth">
+            </section>
+
+            <section id="dex-saving-throw">
+              <label for="dex-saving-throw">Saving Throw</label>
+              <input type="checkbox" name="dex-saving-throw-checkbox" id="dex-saving-throw">
+            </section>
+
           </section>
         </div>
 
-        <div id="character-attributes-section-3">
+        <div id="character-attributes-section-con">
           <section id="character-constitution">
-            Constitution
-          </section>
+            <section id="con-stat">Stat</section>
+            <section id="con-mod">Modifier</section>
+        </section>
 
           <section id="constitution-skills">
-            <input type="checkbox" name="con-skill" id="con-saving-throw">
-            <label for="con-saving-throw">Saving Throw</label>
+
+            <section id="con-saving-throw">
+              <label for="con-saving-throw">Saving Throw</label>
+              <input type="checkbox" name="con-saving-throw-checkbox" id="con-saving-throw">
+            </section>
+
           </section>
         </div>
 
-        <div id="character-attributes-section-4">
+        <div id="character-attributes-section-int">
           <section id="character-intelligence">
-            Intelligence
-          </section>
+            <section id="int-stat">Stat</section>
+            <section id="int-mod">Modifier</section>
+        </section>
 
           <section id="intelligence-skills">
-            <input type="checkbox" name="int-skill" id="arcana">
-            <label for="arcana">Arcana</label>
-            <input type="checkbox" name="int-skill" id="history">
-            <label for="history">History</label>
-            <input type="checkbox" name="int-skill" id="Investigation">
-            <label for="Investigation">Investigation</label>
-            <input type="checkbox" name="int-skill" id="nature">
-            <label for="nature">Nature</label>
-            <input type="checkbox" name="int-skill" id="religion">
-            <label for="religion">Religion</label>
-            <input type="checkbox" name="int-skill" id="int-saving-throw">
-            <label for="int-saving-throw">Saving Throw</label>
+            <section id="arcana">
+              <label for="arcana">Arcana</label>
+              <input type="checkbox" name="arcana-checkbox" id="arcana">
+            </section>
+
+            <section id="history">
+              <label for="history">History</label>
+              <input type="checkbox" name="history-checkbox" id="history">
+            </section>
+
+            <section id="investigation">
+              <label for="investigation">Investigation</label>
+              <input type="checkbox" name="investigation-checkbox" id="investigation">
+            </section>
+
+            <section id="nature">
+              <label for="nature">Nature</label>
+              <input type="checkbox" name="nature-checkbox" id="nature">
+            </section>
+
+            <section i="religion">
+              <label for="religion">Religion</label>
+              <input type="checkbox" name="religion-checkbox" id="religion">
+            </section>
+
+            <section id="int-saving-throw">
+              <label for="int-saving-throw">Saving Throw</label>
+              <input type="checkbox" name="int-saving-throw-checkbox" id="int-saving-throw">
+            </section>
           </section>
         </div>
 
-        <div id="character-attributes-section-5">
+        <div id="character-attributes-section-wis">
           <section id="character-wisdom">
-            Wisdom
-          </section>
+            <section id="wis-stat">Stat</section>
+            <section id="wis-mod">Modifier</section>
+        </section>
 
           <section id="wisdom-skills">
-            <input type="checkbox" name="wis-skill" id="animal handling">
-            <label for="animal handling">Animal Handling</label>
-            <input type="checkbox" name="wis-skill" id="insight">
-            <label for="insight">Insight</label>
-            <input type="checkbox" name="wis-skill" id="medicine">
-            <label for="medicine">Medicine</label>
-            <input type="checkbox" name="wis-skill" id="perception">
-            <label for="perception">Perception</label>
-            <input type="checkbox" name="wis-skill" id="survival">
-            <label for="survival">Survival</label>
-            <input type="checkbox" name="wis-skill" id="wis-saving-throw">
-            <label for="wis-saving-throw">Saving Throw</label>
+
+            <section id="animal-handling">
+              <label for="animal-handling">Animal Handling</label>
+              <input type="checkbox" name="animal-handling-checkbox" id="animal-handling">
+            </section>
+
+            <section id="insight">
+              <label for="insight">Insight</label>
+              <input type="checkbox" name="insight-checkbox" id="insight">
+            </section>
+
+            <section id="medicine">
+              <label for="medicine">Medicine</label>
+              <input type="checkbox" name="medicine-checkbox" id="medicien">
+            </section>
+
+            <section id="perception">
+              <label for="perception">Perception</label>
+              <input type="checkbox" name="perception-checkbox" id="perception">
+            </section>
+
+            <section id="survival">
+              <label for="survival">Survival</label>
+              <input type="checkbox" name="survival-checkbox" id="survivial">
+            </section>
+
+            <section id="wis-saving-throw">
+              <label for="wis-saving-throw">Saving Throw</label>
+              <input type="checkbox" name="wis-saving-throw-checkbox" id="wis-saving-throw">
+            </section>
+
           </section>
         </div>
 
-        <div id="character-attributes-section-6">
+        <div id="character-attributes-section-cha">
           <section id="character-charisma">
-            Charisma
-          </section>
+            <section id="cha-stat">Stat</section>
+            <section id="cha-mod">Modifier</section>
+        </section>
 
           <section id="charisma-skills">
-            <input type="checkbox" name="cha-skill" id="deception">
-            <label for="deception">Deception</label>
-            <input type="checkbox" name="cha-skill" id="intimidation">
-            <label for="intimidation">Intimidation</label>
-            <input type="checkbox" name="cha-skill" id="performance">
-            <label for="performance">Performance</label>
-            <input type="checkbox" name="cha-skill" id="persuasion">
-            <label for="persuasion">Persuasion</label>
-            <input type="checkbox" name="cha-skill" id="cha-saving-throw">
-            <label for="cha-saving-throw">Saving Throw</label>
+
+            <section id="deception">
+              <label for="deception">Deception</label>
+              <input type="checkbox" name="deception-checkbox" id="deception">
+            </section>
+
+            <section id="intimidation">
+              <label for="intimidation">Intimidation</label>
+              <input type="checkbox" name="intimidation-checkbox" id="intimidation">
+            </section>
+
+            <section id="performance">
+              <label for="performance">Perfomance</label>
+              <input type="checkbox" name="performance-checkbox" id="performance">
+            </section>
+
+            <section id="persuasion">
+              <label for="persuasion">Persuasion</label>
+              <input type="checkbox" name="persuasion-checkbox" id="persuasion">
+            </section>
+
+            <section id="cha-saving-throw">
+              <label for="cha-saving-throw">Saving Throw</label>
+              <input type="checkbox" name="cha-saving-throw-checkbox" id="cha-saving-throw">
+            </section>
+
           </section>
         </div>
     </div>
+
+    <div class="character-sheet"></div>
+
   </body>
 
 </html>

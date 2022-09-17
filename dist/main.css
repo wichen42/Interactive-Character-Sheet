@@ -1,7 +1,7 @@
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
-.character-sheet-header {
+#character-sheet-header {
   height: 100px;
   margin: 35px;
   border-radius: 25px;
@@ -69,8 +69,15 @@
   border: 1px solid red;
 }
 
-.character-sheet-attributes {
+#character-sheet-attributes {
   border: 1px solid red;
+  margin: 35px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+
+#character-attributes-section-str {
+  display: flex;
 }
 
 #character-details-section-1 {
@@ -79,9 +86,22 @@
   border: 1px solid red;
 }
 
+#str-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#str-mod {
+  text-align: center;
+}
+
 #character-strength {
   display: inline-block;
   width: 30%;
+  height: 100%;
   border: 1px solid red;
 }
 
@@ -94,7 +114,23 @@
 
 #strength-skills label {
   display: inline-block;
-  width: 100px;
+  width: 150px;
+}
+
+#character-attributes-section-dex {
+  display: flex;
+}
+
+#dex-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#dex-mod {
+  text-align: center;
 }
 
 #character-dexterity {
@@ -105,8 +141,30 @@
 
 #dexterity-skills {
   display: inline-block;
+  flex-direction: column;
   width: 69%;
   border: 1px solid red;
+}
+
+#dexterity-skills label {
+  display: inline-block;
+  width: 150px;
+}
+
+#character-attributes-section-con {
+  display: flex;
+}
+
+#con-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#con-mod {
+  text-align: center;
 }
 
 #character-constitution {
@@ -121,6 +179,27 @@
   border: 1px solid red;
 }
 
+#constitution-skills label {
+  display: inline-block;
+  width: 150px;
+}
+
+#character-attributes-section-int {
+  display: flex;
+}
+
+#int-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#int-mod {
+  text-align: center;
+}
+
 #character-intelligence {
   display: inline-block;
   width: 30%;
@@ -131,6 +210,27 @@
   display: inline-block;
   width: 69%;
   border: 1px solid red;
+}
+
+#intelligence-skills label {
+  display: inline-block;
+  width: 150px;
+}
+
+#character-attributes-section-wis {
+  display: flex;
+}
+
+#wis-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#wis-mod {
+  text-align: center;
 }
 
 #character-wisdom {
@@ -145,6 +245,27 @@
   border: 1px solid red;
 }
 
+#wisdom-skills label {
+  display: inline-block;
+  width: 150px;
+}
+
+#character-attributes-section-cha {
+  display: flex;
+}
+
+#cha-stat {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  width: 50px;
+  text-align: center;
+}
+
+#cha-mod {
+  text-align: center;
+}
+
 #character-charisma {
   display: inline-block;
   width: 30%;
@@ -155,4 +276,9 @@
   display: inline-block;
   width: 69%;
   border: 1px solid red;
+}
+
+#charisma-skills label {
+  display: inline-block;
+  width: 150px;
 }

@@ -1,4 +1,6 @@
-.character-sheet-header {
+// character attributes bar
+
+#character-sheet-header {
     height: 100px;
     margin: 35px;
     border-radius: 25px;
@@ -66,9 +68,23 @@
     border: 1px solid red;
 }
 
-.character-sheet-attributes {
+// Character stats
+
+#character-sheet-attributes {
     border: 1px solid red;
+
+    margin: 35px;
+    border-radius: 25px;
+    border: 2px solid black;
 }
+
+// Strength
+
+#character-attributes-section-str {
+    display: flex;
+}
+
+// character str block
 
 #character-details-section-1 {
     width: 50%;
@@ -76,13 +92,31 @@
     border: 1px solid red;
 }
 
+// Strength Stats and Modifiers
+
+#str-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#str-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
+}
+
 // Strength Skills and Saving Throws
 
 #character-strength {
     display: inline-block;
     width: 30%;
+    height: 100%;
     border: 1px solid red;
+
 }
+
 
 #strength-skills {
     display: inline-flex;
@@ -93,10 +127,31 @@
 
 #strength-skills label {
     display: inline-block;
-    width: 100px;
+    width: 150px;
+}
+
+// Dexterity
+
+#character-attributes-section-dex {
+    display: flex;
+}
+// Dexterity Stats and Modifiers
+
+#dex-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#dex-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
 }
 
 // Dexterity Skills and Saving Throws
+
 
 #character-dexterity {
     display: inline-block;
@@ -106,9 +161,37 @@
 
 #dexterity-skills {
     display: inline-block;
+    flex-direction: column;
     width: 69%;
     border: 1px solid red;
 }
+
+#dexterity-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+// Constitution
+
+#character-attributes-section-con {
+    display: flex;
+}
+
+// Constitution Stats and Modifiers 
+
+#con-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#con-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
+}
+
 
 // Constitution Skills and Saving Throws
 
@@ -122,6 +205,32 @@
     display: inline-block;
     width: 69%;
     border: 1px solid red;
+}
+
+#constitution-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+// Intelligence
+
+#character-attributes-section-int {
+    display: flex;
+}
+
+// Intelligence Stats and Modifiers
+
+#int-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#int-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
 }
 
 // Intelligence Skills and Saving Throws
@@ -138,6 +247,32 @@
     border: 1px solid red;
 }
 
+#intelligence-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+// Wisdom
+
+#character-attributes-section-wis {
+    display: flex;
+}
+
+// Wisdom Stats and Modifiers
+
+#wis-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#wis-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
+}
+
 // Wisdom Skills and Saving Throws
 
 #character-wisdom {
@@ -152,6 +287,32 @@
     border: 1px solid red;
 }
 
+#wisdom-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+// Charisma
+
+#character-attributes-section-cha {
+    display: flex;
+}
+
+// Charisma Stats and Modifiers
+
+#cha-stat {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 50px;
+    text-align: center;
+}
+
+#cha-mod {
+    // need to determine height of largest skill block 
+    text-align: center;
+}
+
 // Charisma Skills and Saving Throws
 
 #character-charisma {
@@ -164,4 +325,9 @@
     display: inline-block;
     width: 69%;
     border: 1px solid red;
+}
+
+#charisma-skills label {
+    display: inline-block;
+    width: 150px;
 }
