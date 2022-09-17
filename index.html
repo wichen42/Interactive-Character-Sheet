@@ -14,15 +14,47 @@
 
     <div id="character-sheet-header">
 
-      <section id="character-name">Name (form)</section>
+      <section id="character-name">
+        <input type="text" id="character-name" value="character name">
+      </section>
       <div class="character-details">
         <div id="character-details-section-1">
-          <section id="class">Class (dropdown)</section>
-          <section id="background">Background (dropdown)</section>
+          <section id="class">Class: 
+            <select id="class-select">
+              <option value="default">Please Select</option>
+              <option value="warrior">Warrior</option>
+              <option value="thief">Thief</option>
+              <option value="mage">Magician</option>
+              <option value="archer">Archer</option>
+            </select>
+          </section>
+          <section id="background">Background:
+            <select id="background-select">
+              <option value="default">Please Select</option>
+            </select>
+          </section>
         </div>
         <div id="character-details-section-2">
-          <section id="race">Race (dropdown)</section>
-          <section id="alignment">Status (dropdown)</section>  
+          <section id="race">Race:
+            <select id="background-select">
+              <option value="default">Please Select</option>
+              <option value="dwarf">Dwarf</option>
+              <option value="elf">Elf</option>
+              <option value="half-orc">half-orc</option>
+              <option value="human">Human</option>
+              <option value="tiefling">Tiefling</option>
+            </select>
+          </section>
+          <section id="ailment">Status: 
+            <label for="poison">Poison</label>
+            <input type="radio" name="status" id="poison">
+            
+            <label for="petrified">Petrify</label>
+            <input type="radio" name="status" id="petrified">
+
+            <label for="unconscious">Unconscious</label>
+            <input type="radio" name="status" id="unconscious">
+          </section>  
         </div>
       </div>
 
@@ -226,9 +258,13 @@
         
       <div class="character-sheet-survival-stats">
         
-        <div class="character-sheet-health"></div>
+        <section class="character-sheet-hp">
+          <input type="text" id="hp" value="HP">
+        </section>
 
-        <div class="character-sheet-armor"></div>
+        <section class="character-sheet-ac">
+          <input type="text" id="ac" value="AC">
+        </section>
         
     </div>
 
