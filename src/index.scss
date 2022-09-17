@@ -70,7 +70,7 @@
 
 // Character stats
 
-#character-sheet-attributes {
+#character-sheet-stats {
     border: 1px solid red;
 
     margin: 35px;
@@ -112,7 +112,7 @@
 #character-strength {
     display: inline-block;
     width: 30%;
-    height: 100%;
+    height: 120px;
     border: 1px solid red;
 
 }
@@ -156,6 +156,7 @@
 #character-dexterity {
     display: inline-block;
     width: 30%;
+    height: 120px;
     border: 1px solid red;
 }
 
@@ -197,6 +198,7 @@
 
 #character-constitution {
     display: inline-block;
+    height: 120px;
     width: 30%;
     border: 1px solid red;
 }
@@ -239,6 +241,7 @@
     display: inline-block;
     width: 30%;
     border: 1px solid red;
+    height: 120px;
 }
 
 #intelligence-skills {
@@ -278,6 +281,7 @@
 #character-wisdom {
     display: inline-block;
     width: 30%;
+    height: 120px;
     border: 1px solid red;
 }
 
@@ -318,6 +322,7 @@
 #character-charisma {
     display: inline-block;
     width: 30%;
+    height: 120px;
     border: 1px solid red;
 }
 
