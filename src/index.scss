@@ -83,8 +83,6 @@
 // Character stats
 
 #character-sheet-stats {
- 
-    border: 1px solid red;
     margin: 35px;
     border-radius: 25px;
     border: 2px solid black;
@@ -119,13 +117,75 @@
     border: solid 1px black;
 }
 
-#character-sheet-survival-stats {
+.character-sheet-survival-stats {
+    display: flex;
     border: 1px solid red;
+    flex-direction: column;
     margin: 35px;
     border-radius: 25px;
     border: 2px solid black;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
+
+.character-health-armor {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid red;
+
+}
+
+#character-section-health {
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-evenly;
+}
+
+#character-sheet-armor {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+}
+
+.character-misc-stats {
+    flex-grow: 1;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.character-items {
+    flex-grow: 1;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.character-sheet-model-and-attacks {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    margin: 35px;
+    border-radius: 25px;
+    border: 2px solid black;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+
+
+
+
 // Strength
 
 #character-attributes-section-str {
