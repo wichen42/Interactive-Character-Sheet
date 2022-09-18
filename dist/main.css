@@ -212,6 +212,7 @@
 #character-canvas {
   flex-grow: 5.5;
   border: 1px solid red;
+  width: 100%;
 }
 
 #character-attacks-and-spells {
