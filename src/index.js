@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillRect(x, 50, 100, 100);
+        ctx.fillRect(x, 100, 100, 100);
         x++;
         requestAnimationFrame(animate);
     }

@@ -141,9 +141,37 @@ table {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
-  width: 15%;
-  height: 35%;
+  border: 1px solid red;
+}
+
+#str {
+  width: 30px;
+  height: 30px;
+}
+
+#dex {
+  width: 30px;
+  height: 30px;
+}
+
+#con {
+  width: 30px;
+  height: 30px;
+}
+
+#int {
+  width: 30px;
+  height: 30px;
+}
+
+#wis {
+  width: 30px;
+  height: 30px;
+}
+
+#cha {
+  width: 30px;
+  height: 30px;
 }
 
 .mod {
