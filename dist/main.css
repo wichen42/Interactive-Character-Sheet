@@ -209,6 +209,29 @@
   justify-content: space-evenly;
 }
 
+#character-canvas {
+  flex-grow: 5.5;
+  border: 1px solid red;
+}
+
+#character-attacks-and-spells {
+  flex-grow: 4.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+
+#attack-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 #character-attributes-section-str {
   display: flex;
   flex-grow: 1;

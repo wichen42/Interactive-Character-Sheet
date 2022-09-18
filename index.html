@@ -313,7 +313,7 @@
           <section id="character-equipment">
             <section id="equipment-input">
               <input type="text" id="equipment-item" value="Enter Equipment Here">
-              <input type="button" value="Add Equipment">
+              <input type="button" value="Add Equipment" id="add-equipment">
             </section>
 
             <section id="equipment-list">
@@ -331,7 +331,7 @@
             
             <section id="inventory-input">
               <input type="text" id="inventory-item" value="Enter Item Here">
-              <input type="button" value="Add Item">
+              <input type="button" value="Add Item" id="add-item">
             </section>
 
             <section id="inventory-list">
@@ -351,8 +351,26 @@
       </div>
 
       <div class="character-sheet-model-and-attacks">
-        <section id="chaaracter-canvas"></section>
+
+        <section id="character-canvas">
+          <canvas id="model-canvas"></canvas>
+        </section>
+
         <section id="character-attacks-and-spells">
+          <section id="attack-input">
+            <input type="text" id="add-attack">
+            <input type="button" value="add-attack" id="add-attack">
+          </section>
+
+          <section id="attack-list">
+            <ul id="attack-spell-list">
+              <li>Place Holder</li>
+              <li>Place Holder</li>
+              <li>Place Holder</li>
+              <li>Place Holder</li>
+            </ul>
+          </section>
+
         </section>
       </div>
 
