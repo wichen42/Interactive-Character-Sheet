@@ -48,13 +48,20 @@ table {
 }
 
 
-
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
 
 // character attributes bar
 
 #character-sheet-header {
     display: flex;
     height: 100px;
+    width: 90%;
     margin: 35px;
     border-radius: 25px;
     border: 2px solid black;
@@ -195,6 +202,7 @@ table {
 #character-sheet-body {
     display: flex;
     border: solid 1px black;
+    width: 100%;
 }
 
 .character-sheet-survival-stats {
@@ -374,7 +382,7 @@ table {
 }
 
 #athletics-label:hover {
-    
+
 }
 
 // Dexterity

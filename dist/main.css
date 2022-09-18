@@ -55,9 +55,18 @@ table {
   border-spacing: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+
 #character-sheet-header {
   display: flex;
   height: 100px;
+  width: 90%;
   margin: 35px;
   border-radius: 25px;
   border: 2px solid black;
@@ -185,6 +194,7 @@ table {
 #character-sheet-body {
   display: flex;
   border: solid 1px black;
+  width: 100%;
 }
 
 .character-sheet-survival-stats {
