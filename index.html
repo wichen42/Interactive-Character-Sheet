@@ -67,6 +67,7 @@
 
     <div id="character-sheet-body">
 
+      <!-- Look into grid for structure -->
       <div id="character-sheet-stats">
           <div id="character-attributes-section-str">
               <section id="character-strength">
@@ -259,22 +260,17 @@
       <div class="character-sheet-survival-stats">
         
         <div class="character-health-armor">
-          
-          <section id="character-section-health">
 
             <section id="character-sheet-hp">
               <label for="hp"></label>
-              <input type="text" id="hp" value="HP" line-height="35px">
+              <input type="number" id="hp" line-height="35px">
             </section>
             
             <section id="character-temp-hp">
               <label for="temp-hp"></label>
-                <input type="text" id="temp-hp" value="TEMP HP">
+                <input type="number" id="temp-hp">
             </section>
 
-          </section>
-          
-          <section id="character-sheet-armor">
 
             <section id="character-sheet-ac">
               <label for="ac"></label>
@@ -283,10 +279,9 @@
   
             <section id="character-hit-dice">
               <label for="hit-dice"></label>
-              <input type="text" id="hit-dice" value="Hit Dice">
+              <input type="button" id="hit-dice" value="Hit Dice">
             </section>
 
-          </section>
 
 
 

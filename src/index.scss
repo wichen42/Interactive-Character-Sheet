@@ -130,20 +130,15 @@
 }
 
 .character-health-armor {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto;
     width: 100%;
     border: 1px solid red;
-
+    gap: 10px;
+    place-items: center;
+    padding-top: 10px;
 }
 
-#character-section-health {
-    display: flex;
-    border: 1px solid red;
-    justify-content: space-evenly;
-}
 
 #hp {
     height: 50px;
@@ -158,17 +153,19 @@
 }
 
 #hit-dice {
-    height: 50px;
+    height: 65px;
+    width: 100px;
 }
 
-#character-sheet-armor {
-    display: flex;
-    justify-content: space-evenly;
-    border: 1px solid red;
-}
+
 
 .character-misc-stats {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     border: 1px solid red;
     width: 100%;
 }
@@ -204,16 +201,11 @@
 
 // Strength
 
-#character-attributes-section-str {
-    display: flex;
-}
-
 // character str block
 
-#character-details-section-1 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid red;
+#character-attributes-section-str {
+    display: flex;
+    flex-grow: 1;
 }
 
 
@@ -222,7 +214,7 @@
 #character-strength {
     display: inline-block;
     width: 30%;
-    height: 120px;
+    // height: 120px;
     border: 1px solid red;
 
 }
@@ -246,6 +238,7 @@
 
 #character-attributes-section-dex {
     display: flex;
+    flex-grow: 1;
 }
 
 // Dexterity Skills and Saving Throws
@@ -254,7 +247,7 @@
 #character-dexterity {
     display: inline-block;
     width: 30%;
-    height: 120px;
+    // height: 120px;
     border: 1px solid red;
 }
 
@@ -274,13 +267,14 @@
 
 #character-attributes-section-con {
     display: flex;
+    flex-grow: 1;
 }
 
 // Constitution Skills and Saving Throws
 
 #character-constitution {
     display: inline-block;
-    height: 120px;
+    // height: 120px;
     width: 30%;
     border: 1px solid red;
 }
@@ -300,6 +294,7 @@
 
 #character-attributes-section-int {
     display: flex;
+    flex-grow: 1;
 }
 
 // Intelligence Skills and Saving Throws
@@ -308,7 +303,7 @@
     display: inline-block;
     width: 30%;
     border: 1px solid red;
-    height: 120px;
+    // height: 120px;
 }
 
 #intelligence-skills {
@@ -326,6 +321,7 @@
 
 #character-attributes-section-wis {
     display: flex;
+    flex-grow: 1;
 }
 
 // Wisdom Skills and Saving Throws
@@ -333,7 +329,7 @@
 #character-wisdom {
     display: inline-block;
     width: 30%;
-    height: 120px;
+    // height: 120px;
     border: 1px solid red;
 }
 
@@ -352,6 +348,7 @@
 
 #character-attributes-section-cha {
     display: flex;
+    flex-grow: 1;
 }
 
 // Charisma Skills and Saving Throws
@@ -359,7 +356,7 @@
 #character-charisma {
     display: inline-block;
     width: 30%;
-    height: 120px;
+    // height: 120px;
     border: 1px solid red;
 }
 

@@ -116,18 +116,13 @@
 }
 
 .character-health-armor {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto auto;
   width: 100%;
   border: 1px solid red;
-}
-
-#character-section-health {
-  display: flex;
-  border: 1px solid red;
-  justify-content: space-evenly;
+  gap: 10px;
+  place-items: center;
+  padding-top: 10px;
 }
 
 #hp {
@@ -143,17 +138,17 @@
 }
 
 #hit-dice {
-  height: 50px;
-}
-
-#character-sheet-armor {
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid red;
+  height: 65px;
+  width: 100px;
 }
 
 .character-misc-stats {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
   border: 1px solid red;
   width: 100%;
 }
@@ -179,18 +174,12 @@
 
 #character-attributes-section-str {
   display: flex;
-}
-
-#character-details-section-1 {
-  width: 50%;
-  height: 100%;
-  border: 1px solid red;
+  flex-grow: 1;
 }
 
 #character-strength {
   display: inline-block;
   width: 30%;
-  height: 120px;
   border: 1px solid red;
 }
 
@@ -210,12 +199,12 @@
 
 #character-attributes-section-dex {
   display: flex;
+  flex-grow: 1;
 }
 
 #character-dexterity {
   display: inline-block;
   width: 30%;
-  height: 120px;
   border: 1px solid red;
 }
 
@@ -233,11 +222,11 @@
 
 #character-attributes-section-con {
   display: flex;
+  flex-grow: 1;
 }
 
 #character-constitution {
   display: inline-block;
-  height: 120px;
   width: 30%;
   border: 1px solid red;
 }
@@ -255,13 +244,13 @@
 
 #character-attributes-section-int {
   display: flex;
+  flex-grow: 1;
 }
 
 #character-intelligence {
   display: inline-block;
   width: 30%;
   border: 1px solid red;
-  height: 120px;
 }
 
 #intelligence-skills {
@@ -277,12 +266,12 @@
 
 #character-attributes-section-wis {
   display: flex;
+  flex-grow: 1;
 }
 
 #character-wisdom {
   display: inline-block;
   width: 30%;
-  height: 120px;
   border: 1px solid red;
 }
 
@@ -299,12 +288,12 @@
 
 #character-attributes-section-cha {
   display: flex;
+  flex-grow: 1;
 }
 
 #character-charisma {
   display: inline-block;
   width: 30%;
-  height: 120px;
   border: 1px solid red;
 }
 
