@@ -1,4 +1,5 @@
 const warriorEquip = require('./scripts/equipment-autocomplete');
+const warrior = require('./scripts/warrior');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -13,9 +14,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ctx.fillStyle = "grey";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
+    const image = new Image();
+    let player = {};
+
+
     const warriorImage = new Image();
     warriorImage.src = './sprites_sheet/warrior_sprite_sheet.png';
-    
+
+
+
     const warriorWidth = 120;
     const warriorHeight = 85;
 
@@ -33,29 +40,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    function animate () {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        ctx.drawImage(warriorImage, frameX * warriorWidth, frameY * warriorHeight, warriorWidth, warriorHeight, 0, -50, canvas.width, canvas.height);
-
-        if(frame % 10 === 0) {
-            if (frameX < 9) {
-                frameX++;
-            } else {
-                frameX = 0;
-            }
-        }
-
-        frame++;
-
-        requestAnimationFrame(animate);
-    }
-
-    let result = document.querySelector('#state-select');
-        
-    document.body.addEventListener('change', function (e) {
+    document.addEventListener('change', function (e) {
         let target = e.target;
-        let message;
+        console.log(e)
 
         switch (target.value) {
             case 'idle':
@@ -70,13 +57,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 console.log("rest")
                 frameY = 2;
                 break;
+            case 'warrior':
+                console.log(target.value)
+                image.src = './sprites_sheet/warrior_sprite_sheet.png';
+                player = warrior;
+                console.log(warrior);
+                break;
         }
     });
-    let weapons = Object.values(warriorEquip);
-    console.log(weapons);
 
-/*     $('#equipment-item').autocomplete(); */
-    console.log(warriorEquip);
+    function animate () {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, 0, -50, canvas.width, canvas.height);
+
+        if(frame % 10 === 0) {
+            if (frameX < 9) {
+                frameX++;
+            } else {
+                frameX = 0;
+            }
+        }
+
+        frame++;
+
+        requestAnimationFrame(animate);
+    }
+
+
+
+    console.log(warrior.height)
 
     animate();
 })
