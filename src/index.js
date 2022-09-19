@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    
-    console.log("hello world!")
+
 
     var canvas = document.getElementById("model-canvas");
     var parent = document.getElementById("character-canvas");
@@ -22,6 +21,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let frameY = 1;
     let frame = 0;
 
+    var selected = document.querySelector('#state-select');
+
+    for(let i = 0; i < selected.length; i++) {
+        if (selected.options[i].selected === true) {
+            console.log("true")
+        } else {
+            console.log(`${selected.options[i].value}`);
+        }
+    }
+
     function idle_animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -39,6 +48,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         requestAnimationFrame(idle_animate);
     }
+
+    let result = document.querySelector('#state-select');
+        
+    document.body.addEventListener('change', function (e) {
+        let target = e.target;
+        let message;
+
+        switch (target.value) {
+            case 'idle':
+                console.log(target.value)
+                frameY = 0;
+                break;
+            case 'battle':
+                console.log("battle")
+                frameY = 1;
+                break;
+            case 'rest':
+                console.log("rest")
+                frameY = 2;
+                break;
+        }
+    });
+    
 
     idle_animate();
 })
