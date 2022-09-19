@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const image = new Image();
     let player = {};
+    let stagger = 0;
 
 
     const warriorImage = new Image();
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 image.src = './sprites_sheet/warrior_sprite_sheet.png';
                 player = warrior;
                 console.log(warrior);
+                stagger = 10;
                 break;
         }
     });
@@ -71,8 +73,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, 0, -50, canvas.width, canvas.height);
 
-        if(frame % 10 === 0) {
-            if (frameX < 9) {
+        if(frame % stagger === 0) {
+            if (frameX < stagger-1) {
                 frameX++;
             } else {
                 frameX = 0;
