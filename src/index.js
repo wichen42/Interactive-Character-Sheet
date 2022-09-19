@@ -1,5 +1,6 @@
 const warriorEquip = require('./scripts/equipment-autocomplete');
 const warrior = require('./scripts/warrior');
+const thief = require('./scripts/thief')
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -18,28 +19,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let player = {};
     let stagger = 0;
 
-
-    const warriorImage = new Image();
-    warriorImage.src = './sprites_sheet/warrior_sprite_sheet.png';
-
-
-
-    const warriorWidth = 120;
-    const warriorHeight = 85;
-
     let frameX = 0;
     let frameY = 1;
     let frame = 0;
-
-    var selected = document.querySelector('#state-select');
-
-    for(let i = 0; i < selected.length; i++) {
-        if (selected.options[i].selected === true) {
-            console.log("true")
-        } else {
-            console.log(`${selected.options[i].value}`);
-        }
-    }
 
     document.addEventListener('change', function (e) {
         let target = e.target;
@@ -47,26 +29,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         switch (target.value) {
             case 'idle':
-                console.log(target.value)
+                console.log(target.value);
                 frameY = 0;
                 break;
             case 'battle':
-                console.log("battle")
+                console.log("battle");
                 frameY = 1;
                 break;
             case 'rest':
-                console.log("rest")
+                console.log("rest");
                 frameY = 2;
                 break;
             case 'warrior':
-                console.log(target.value)
+                console.log(target.value);
                 image.src = './sprites_sheet/warrior_sprite_sheet.png';
                 player = warrior;
-                console.log(warrior);
                 stagger = 10;
+                break;
+            case 'thief':
+                console.log(target.value);
+                image.src = './sprites_sheet/thief_sprite_sheet.png';
+                player = thief;
+                stagger = 16;
                 break;
         }
     });
+
+    const test_thief = new Image();
+    test_thief.src = './sprites_sheet/thief_sprite_sheet.png';
 
     function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
