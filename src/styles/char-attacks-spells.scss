@@ -15,6 +15,7 @@
 #model-canvas {
     width: 600px;
     height: 600px;
+    border: 2px solid black;
 }
 
 #character-canvas {
@@ -42,7 +43,7 @@
 }
 
 #attack-spell-list li {
-    margin: 25px;
+    margin: 15px;
 }
 
 #attack-list {

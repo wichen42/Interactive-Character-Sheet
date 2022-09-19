@@ -107,6 +107,14 @@
     width: 100%;
 }
 
+#equip-list li {
+    margin: 15px;
+}
+
+#inventory-list li {
+    margin: 15px;
+}
+
 #character-equipment {
     display: flex;
     flex-direction: column;

@@ -161,6 +161,14 @@ table {
     width: 100%;
 }
 
+#equip-list li {
+    margin: 15px;
+}
+
+#inventory-list li {
+    margin: 15px;
+}
+
 #character-equipment {
     display: flex;
     flex-direction: column;
@@ -487,6 +495,7 @@ table {
 #model-canvas {
     width: 600px;
     height: 600px;
+    border: 2px solid black;
 }
 
 #character-canvas {
@@ -514,7 +523,7 @@ table {
 }
 
 #attack-spell-list li {
-    margin: 25px;
+    margin: 15px;
 }
 
 #attack-list {

@@ -1,3 +1,5 @@
+const warriorEquip = require('./scripts/equipment-autocomplete');
+
 document.addEventListener('DOMContentLoaded', (event) => {
 
 
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
-    function idle_animate () {
+    function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.drawImage(warriorImage, frameX * warriorWidth, frameY * warriorHeight, warriorWidth, warriorHeight, 0, -50, canvas.width, canvas.height);
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         frame++;
 
-        requestAnimationFrame(idle_animate);
+        requestAnimationFrame(animate);
     }
 
     let result = document.querySelector('#state-select');
@@ -70,7 +72,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 break;
         }
     });
-    
+    let weapons = Object.values(warriorEquip);
+    console.log(weapons);
 
-    idle_animate();
+/*     $('#equipment-item').autocomplete(); */
+    console.log(warriorEquip);
+
+    animate();
 })
