@@ -12,14 +12,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ctx.fillStyle = "grey";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    let x = 0;
+    const warriorImage = new Image();
+    warriorImage.src = './sprites_sheet/_Idle.png';
+    
 
-    function animate () {
+
+    function idle_animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillRect(x, 100, 100, 100);
-        x++;
-        requestAnimationFrame(animate);
+
+        ctx.drawImage(warriorImage, 80, -30, 4100, 300 );
+
+        requestAnimationFrame(idle_animate);
     }
 
-    animate();
+    idle_animate();
 })

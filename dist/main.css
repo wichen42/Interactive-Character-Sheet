@@ -484,15 +484,18 @@ table {
 
 }
 
+#model-canvas {
+    width: 100%;
+}
 
 #character-canvas {
     display: flex;
-    flex-grow: 5.5;
+    flex-grow: 3;
     width: 100%;
 }
 
 #character-attacks-and-spells {
-    flex-grow: 4.5;    
+    flex-grow: 7;    
     display: flex;
     flex-direction: column;
     justify-content: center;
