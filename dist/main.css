@@ -477,7 +477,7 @@ table {
     margin: 35px;
     border-radius: 25px;
     border: 2px solid black;
-    flex-grow: 4;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -485,28 +485,37 @@ table {
 }
 
 #model-canvas {
-    width: 100%;
+    width: 600px;
+    height: 600px;
 }
 
 #character-canvas {
     display: flex;
-    flex-grow: 3;
     width: 100%;
+    justify-content: center;
 }
 
 #character-attacks-and-spells {
-    flex-grow: 7;    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 600px;
+    height: 600px;
     justify-content: space-evenly;
     border: 1px solid black;
     border-radius: 25px;
 }
 
+#attack-spell-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+#attack-spell-list li {
+    margin: 25px;
+}
 
 #attack-list {
     display: flex;

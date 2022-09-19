@@ -13,14 +13,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     const warriorImage = new Image();
-    warriorImage.src = './sprites_sheet/_Idle.png';
+    warriorImage.src = './sprites_sheet/warrior_sprite_sheet.png';
     
+    const warriorWidth = 120;
+    const warriorHeight = 85;
 
+    let frameX = 0;
+    let frameY = 1;
+    let frame = 0;
 
     function idle_animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-        ctx.drawImage(warriorImage, 80, -30, 4100, 300 );
+        ctx.drawImage(warriorImage, frameX * warriorWidth, frameY * warriorHeight, warriorWidth, warriorHeight, 0, -50, canvas.width, canvas.height);
+
+        if(frame % 10 === 0) {
+            if (frameX < 9) {
+                frameX++;
+            } else {
+                frameX = 0;
+            }
+        }
+
+        frame++;
 
         requestAnimationFrame(idle_animate);
     }
