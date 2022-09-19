@@ -40,6 +40,10 @@
 
 #character-sheet-stats {
     display: grid;
+    border: 1px solid red;
+    grid-auto-rows: 1fr;
+    width: 100%;
+    
 }
 
 .character-sheet-survival-stats {
@@ -145,8 +149,10 @@
 
 
 #character-strength {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 
 }
@@ -175,15 +181,17 @@
 
 #character-attributes-section-dex {
     display: flex;
-    flex-grow: 1;
+
 }
 
 
 
 
 #character-dexterity {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -210,8 +218,10 @@
 
 
 #character-constitution {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -240,8 +250,10 @@
 
 
 #character-intelligence {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -269,8 +281,10 @@
 
 
 #character-wisdom {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -298,8 +312,10 @@
 
 
 #character-charisma {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 

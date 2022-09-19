@@ -94,6 +94,10 @@ table {
 
 #character-sheet-stats {
     display: grid;
+    border: 1px solid red;
+    grid-auto-rows: 1fr;
+    width: 100%;
+    
 }
 
 .character-sheet-survival-stats {
@@ -199,8 +203,10 @@ table {
 
 
 #character-strength {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 
 }
@@ -229,15 +235,17 @@ table {
 
 #character-attributes-section-dex {
     display: flex;
-    flex-grow: 1;
+
 }
 
 
 
 
 #character-dexterity {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -264,8 +272,10 @@ table {
 
 
 #character-constitution {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -294,8 +304,10 @@ table {
 
 
 #character-intelligence {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -323,8 +335,10 @@ table {
 
 
 #character-wisdom {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
@@ -352,8 +366,10 @@ table {
 
 
 #character-charisma {
-    display: inline-block;
-    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 1px solid red;
 }
 
