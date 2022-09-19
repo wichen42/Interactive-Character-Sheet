@@ -1,0 +1,319 @@
+
+
+#str {
+    width: 30px;
+    height: 30px;
+}
+
+#dex {
+    width: 30px;
+    height: 30px;
+}
+
+#con {
+    width: 30px;
+    height: 30px;
+}
+
+#int {
+    width: 30px;
+    height: 30px;
+}
+
+#wis {
+    width: 30px;
+    height: 30px;
+}
+
+#cha {
+    width: 30px;
+    height: 30px;
+}
+
+.mod {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+#character-sheet-stats {
+    display: grid;
+}
+
+.character-sheet-survival-stats {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    margin: 35px;
+    border-radius: 25px;
+    border: 2px solid black;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-health-armor {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    border: 1px solid red;
+    gap: 10px;
+    place-items: center;
+    padding-top: 10px;
+}
+
+
+#hp {
+    height: 50px;
+}
+
+#temp-hp {
+    height: 50px;
+}
+
+#ac {
+    height: 50px;
+}
+
+#hit-dice {
+    height: 65px;
+    width: 100px;
+}
+
+
+
+.character-misc-stats {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.character-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    border: 1px solid red;
+    width: 100%;
+}
+
+#character-equipment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    border-radius: 25px;
+    flex-grow: 1;
+
+}
+
+#equipment-input {
+    display: flex;
+    justify-content: center;
+}
+
+#equipment-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#character-inventory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+
+#character-attributes-section-str {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+#character-strength {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+
+}
+
+
+#strength-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#strength-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+#athletics-label:hover {
+
+}
+
+
+
+#character-attributes-section-dex {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+
+
+#character-dexterity {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+#dexterity-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#dexterity-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+#character-attributes-section-con {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+#character-constitution {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+#constitution-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#constitution-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+
+#character-attributes-section-int {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+
+#character-intelligence {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+#intelligence-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#intelligence-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+
+#character-attributes-section-wis {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+#character-wisdom {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+#wisdom-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#wisdom-skills label {
+    display: inline-block;
+    width: 150px;
+}
+
+
+
+#character-attributes-section-cha {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+#character-charisma {
+    display: inline-block;
+    flex-grow: 2;
+    border: 1px solid red;
+}
+
+#charisma-skills {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 3;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#charisma-skills label {
+    display: inline-block;
+    width: 150px;
+}

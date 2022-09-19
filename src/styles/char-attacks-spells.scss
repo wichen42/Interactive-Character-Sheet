@@ -1,0 +1,42 @@
+.character-sheet-model-and-attacks {
+    display: flex;
+    border: 1px solid red;
+    flex-direction: column;
+    margin: 35px;
+    border-radius: 25px;
+    border: 2px solid black;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+#character-canvas {
+    display: flex;
+    flex-grow: 5.5;
+    width: 100%;
+}
+
+#character-attacks-and-spells {
+    flex-grow: 4.5;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+
+#attack-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}

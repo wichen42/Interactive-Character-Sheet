@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,63 +16,70 @@
 
     <div id="tooltip"></div>
 
-    <div id="character-sheet-header">
+    <div id="header-container">
 
-      <section id="character-name">
-        <input type="text" id="character-name" value="character name">
-      </section>
-      <div class="character-details">
-        <div id="character-details-section-1">
-          <section id="class">Class: 
-            <select id="class-select">
-              <option value="default">Please Select</option>
-              <option value="warrior">Warrior</option>
-              <option value="thief">Thief</option>
-              <option value="mage">Magician</option>
-              <option value="archer">Archer</option>
-            </select>
-          </section>
-          <section id="background">Background:
-            <select id="background-select">
-              <option value="default">Please Select</option>
-            </select>
-          </section>
+      <div id="character-sheet-header">
+  
+        <section id="character-name">
+          <input type="text" id="character-name" value="character name">
+        </section>
+        <div class="character-details">
+          <div id="character-details-section-1">
+            <section id="class">Class: 
+              <select id="class-select">
+                <option value="default">Please Select</option>
+                <option value="warrior">Warrior</option>
+                <option value="thief">Thief</option>
+                <option value="mage">Magician</option>
+                <option value="archer">Archer</option>
+              </select>
+            </section>
+            <section id="background">Background:
+              <select id="background-select">
+                <option value="default">Please Select</option>
+              </select>
+            </section>
+          </div>
+          <div id="character-details-section-2">
+            <section id="race">Race:
+              <select id="background-select">
+                <option value="default">Please Select</option>
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="half-orc">half-orc</option>
+                <option value="human">Human</option>
+                <option value="tiefling">Tiefling</option>
+              </select>
+            </section>
+            <section id="ailment">Status: 
+              <label for="poison">Poison</label>
+              <input type="radio" name="status" id="poison">
+              
+              <label for="petrified">Petrify</label>
+              <input type="radio" name="status" id="petrified">
+  
+              <label for="unconscious">Unconscious</label>
+              <input type="radio" name="status" id="unconscious">
+            </section>  
+          </div>
         </div>
-        <div id="character-details-section-2">
-          <section id="race">Race:
-            <select id="background-select">
-              <option value="default">Please Select</option>
-              <option value="dwarf">Dwarf</option>
-              <option value="elf">Elf</option>
-              <option value="half-orc">half-orc</option>
-              <option value="human">Human</option>
-              <option value="tiefling">Tiefling</option>
-            </select>
-          </section>
-          <section id="ailment">Status: 
-            <label for="poison">Poison</label>
-            <input type="radio" name="status" id="poison">
-            
-            <label for="petrified">Petrify</label>
-            <input type="radio" name="status" id="petrified">
-
-            <label for="unconscious">Unconscious</label>
-            <input type="radio" name="status" id="unconscious">
-          </section>  
-        </div>
+  
+        <section id="nav-links">
+          <a href="https://github.com/wichen42/Interactive-Character-Sheet">Github</a>
+          <a href="https://github.com/wichen42/Interactive-Character-Sheet">LinkedIn</a>
+          <a href="https://github.com/wichen42/Interactive-Character-Sheet">AngelList</a>
+        </section>
       </div>
 
-      <section id="nav-links">
-        <a href="https://github.com/wichen42/Interactive-Character-Sheet">Github</a>
-        <a href="https://github.com/wichen42/Interactive-Character-Sheet">LinkedIn</a>
-        <a href="https://github.com/wichen42/Interactive-Character-Sheet">AngelList</a>
-      </section>
     </div>
+
 
     <div id="character-sheet-body">
 
-      <!-- Look into grid for structure -->
-      <div id="character-sheet-stats">
+      
+      <div id="stat-container">
+        
+        <div id="character-sheet-stats">
           <div id="character-attributes-section-str">
               <section id="character-strength">
                   <section class="stat">
@@ -270,6 +279,10 @@
           </div>
       
       </div>
+
+      </div>
+
+
 
         
       <div class="character-sheet-survival-stats">
