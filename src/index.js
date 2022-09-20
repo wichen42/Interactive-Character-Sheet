@@ -114,9 +114,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 tooltipDiv.innerHTML = tooltip;
                 console.log(item.offsetWidth)
                 console.log(item.offsetHeight)
-                // tooltipDiv.style.top = item.top + "px";
                 tooltipDiv.style.top = item.offsetTop + "px";
-
                 tooltipDiv.style.left = item.offsetLeft + "px";
                 tooltipDiv.style.opacity = 1;
                 
