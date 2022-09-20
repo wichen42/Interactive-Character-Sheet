@@ -1,6 +1,6 @@
 const thief = {
-    height: 150,
-    width: 275
+    height: 130,
+    width: 288
 }
 
 module.exports = thief;

@@ -1,6 +1,8 @@
 const warriorEquip = require('./scripts/equipment-autocomplete');
 const warrior = require('./scripts/warrior');
 const thief = require('./scripts/thief')
+const mage = require('./scripts/mage');
+const archer = require('./scripts/archer');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -33,11 +35,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 frameY = 0;
                 break;
             case 'battle':
-                console.log("battle");
+                console.log(target.value);
                 frameY = 1;
                 break;
-            case 'rest':
-                console.log("rest");
+            case 'death':
+                console.log(target.value);
                 frameY = 2;
                 break;
             case 'warrior':
@@ -50,8 +52,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 console.log(target.value);
                 image.src = './sprites_sheet/thief_sprite_sheet.png';
                 player = thief;
-                stagger = 16;
+                stagger = 19;
                 break;
+            case 'mage':
+                console.log(target.value);
+                image.src = './sprites_sheet/mage_sprite_sheet.png';
+                player = mage;
+                stagger = 7;
+                break;
+            case 'archer':
+                console.log(target.value);
+                image.src = './sprites_sheet/archer_sprite_sheet.png';
+                player = archer;
+                stagger = 10;
         }
     });
 
@@ -62,8 +75,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, 0, -50, canvas.width, canvas.height);
-
-        if(frame % stagger === 0) {
+        // ctx.drawImage(mage, frameX * 231, frameY * 192, 231, 192, 0, 0, canvas.width, canvas.height)
+        if(frame % stagger === 5) {
             if (frameX < stagger-1) {
                 frameX++;
             } else {
