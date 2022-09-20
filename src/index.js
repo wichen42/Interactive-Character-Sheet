@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 player = warrior;
                 stagger = 10;
                 player_class.dataset.url = "https://www.dnd5eapi.co/api/classes/barbarian";
-                console.log(player_class);
+                console.log(player_class.url);
                 break;
             case 'thief':
                 console.log(target.value);
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    const test_thief = new Image();
 
     function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -97,11 +96,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         let item = e.target;
         let tooltip = "";
         let tooltipDiv = document.querySelector(".tooltip-div");
-        let elements = Array.from(document.querySelectorAll(".hover-reveal"));
-
-        // console.log(tooltip);
-        // console.log(tooltipDiv);
-        // console.log(elements);
 
         async function makeTooltip(url) {
             const response = await fetch(url);
@@ -113,7 +107,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const data = response.json();
             return data;
         }
-        console.log(item.dataset.url);
+
         makeTooltip(item.dataset.url)
             .then (data => {
                 tooltip = data.desc;
@@ -131,6 +125,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 console.log('There has been a problem with fetch operation.', error);
             })
     });
+
 
     animate();
 })
