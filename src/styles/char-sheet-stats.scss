@@ -166,6 +166,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid red;
+    flex-grow: 1;
 
 }
 
@@ -175,7 +176,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 2;
     border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
@@ -197,6 +198,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid red;
+    flex-grow: 1;
 }
 
 #dexterity-skills {
@@ -204,7 +206,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 2;
     border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
@@ -227,6 +229,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     border: 1px solid red;
 }
 
@@ -234,7 +237,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 3;
+    flex-grow: 2;
     border: 1px solid red;
     align-items: center;
     padding-left: 10px;
@@ -260,6 +263,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     border: 1px solid red;
 }
 
@@ -267,7 +271,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-grow: 3;
+    flex-grow: 2;
     align-items: center;
     border: 1px solid red;
     padding-left: 10px;
@@ -291,6 +295,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
     align-items: center;
     border: 1px solid red;
 }
@@ -300,7 +305,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 2;
     border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
@@ -323,6 +328,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 1;
     align-items: center;
     border: 1px solid red;
 }
@@ -332,7 +338,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 2;
     border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
