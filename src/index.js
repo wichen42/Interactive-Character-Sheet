@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     const image = new Image();
+    const player_class = document.getElementById("class");
     let player = {};
     let stagger = 0;
 
@@ -48,6 +49,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 image.src = './sprites_sheet/warrior_sprite_sheet.png';
                 player = warrior;
                 stagger = 10;
+                player_class.dataset.url = "https://www.dnd5eapi.co/api/classes/barbarian";
+                console.log(player_class);
                 break;
             case 'thief':
                 console.log(target.value);
@@ -70,7 +73,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     const test_thief = new Image();
-    test_thief.src = './sprites_sheet/thief_sprite_sheet.png';
 
     function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -111,18 +113,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const data = response.json();
             return data;
         }
-        
+        console.log(item.dataset.url);
         makeTooltip(item.dataset.url)
             .then (data => {
                 tooltip = data.desc;
-                console.log(tooltip);
+                tooltipDiv.innerHTML = tooltip;
+                tooltipDiv.style.top = e.pageY + "px";
+                tooltipDiv.style.left = e.pageX + "px";
+                tooltipDiv.style.opacity = 1;
                 
+                item.addEventListener("mouseleave", function(e) {
+                    tooltipDiv.innerHTML = "";
+                    tooltipDiv.style.opacity = 0;
+                })
             })
             .catch (error => {
                 console.log('There has been a problem with fetch operation.', error);
             })
-
-       
     });
 
     animate();
