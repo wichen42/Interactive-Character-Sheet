@@ -8,12 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./dist/main.css" />
     <script src="./dist/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <title>Character Sheet</title>
   </head>
 
   <body>
-
-    <div id="tooltip"></div>
 
     <div id="header-container">
 
@@ -91,7 +91,7 @@
               </section>
   
               <section id="strength-skills">
-  
+                <label class="attribute">Strength</label>
                 <section id="athletics">
                   <label id="athletics-label">Athletics</label>
                   <input type="checkbox" name="athletics-checkbox" id="athletics">
@@ -115,7 +115,7 @@
           </section>
   
             <section id="dexterity-skills">
-              
+              <label class="attribute">Dexterity</label>
               <section id="acrobactics">
                 <label for="acrobatics" id="acrobatics-label">Acrobatics</label>
                 <input type="checkbox" name="acrobatics-checkbox" id="acrobatics">
@@ -149,7 +149,7 @@
           </section>
   
             <section id="constitution-skills">
-  
+              <label class="attribute">Constitution</label>
               <section id="con-saving-throw">
                 <label for="con-saving-throw" id="con-saving-throw-label">Saving Throw</label>
                 <input type="checkbox" name="con-saving-throw-checkbox" id="con-saving-throw">
@@ -167,6 +167,7 @@
           </section>
   
             <section id="intelligence-skills">
+              <label class="attribute">Intelligence</label>
               <section id="arcana">
                 <label for="arcana" id="arcana-label">Arcana</label>
                 <input type="checkbox" name="arcana-checkbox" id="arcana">
@@ -208,7 +209,7 @@
           </section>
   
             <section id="wisdom-skills">
-  
+              <label class="attribute">Wisddom</label>
               <section id="animal-handling">
                 <label for="animal-handling" id="animal-handling-label">Animal Handling</label>
                 <input type="checkbox" name="animal-handling-checkbox" id="animal-handling">
@@ -251,7 +252,7 @@
           </section>
   
             <section id="charisma-skills">
-  
+              <label class="attribute">Charisma</label>
               <section id="deception">
                 <label for="deception" id="deception-label">Deception</label>
                 <input type="checkbox" name="deception-checkbox" id="deception">
@@ -292,23 +293,25 @@
         <div class="character-health-armor">
 
             <section id="character-sheet-hp">
-              <label for="hp"></label>
-              <input type="number" id="hp" line-height="35px">
+              <label id="hp-label" class="hover-reveal" for="hp" 
+              data-url="rule-sections/damage-and-healing" 
+              data-tooltip="need to populate with api desc">Health</label>
+              <input type="number" id="hp" value="10">
             </section>
             
             <section id="character-temp-hp">
-              <label for="temp-hp"></label>
-                <input type="number" id="temp-hp">
+              <label id="temp-hp-label" class="hover-reveal" for="temp-hp">Temp HP</label>
+                <input type="number" id="temp-hp" value="5">
             </section>
 
 
             <section id="character-sheet-ac">
-              <label for="ac"></label>
-              <input type="text" id="ac" value="AC">
+              <label id="ac-label" class="hover-reveal" for="ac">AC</label>
+              <input type="number" id="ac" value="10">
             </section>
   
             <section id="character-hit-dice">
-              <label for="hit-dice"></label>
+              <label id="hit-dice-label" class="hover-reveal" for="hit-dice">Hit Dice</label>
               <input type="button" id="hit-dice" value="Hit Dice">
             </section>
 
@@ -408,6 +411,7 @@
     </div>
 
 
+    <div class="tooltip-div"></div>
 
   </body>
 

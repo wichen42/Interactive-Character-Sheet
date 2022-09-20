@@ -3,9 +3,10 @@ const warrior = require('./scripts/warrior');
 const thief = require('./scripts/thief')
 const mage = require('./scripts/mage');
 const archer = require('./scripts/archer');
+const { async } = require('regenerator-runtime');
+const tooltipHover = require('./scripts/hover');
 
 document.addEventListener('DOMContentLoaded', (event) => {
-
 
     var canvas = document.getElementById("model-canvas");
     var parent = document.getElementById("character-canvas");
@@ -90,8 +91,56 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
 
+    var item = document.getElementById("hp-label");
+    item.addEventListener("mouseover", func, false);
+    item.addEventListener("mouseout", func1, false);
 
-    console.log(warrior.height)
+    function func () {
+    
+        item.textContent = "Hit Points"
+        item.dataset.tooltip = "Changed"
+
+        let data_url = "https://www.dnd5eapi.co/api/rule-sections/damage-and-healing";
+
+        async function getData(data_url) {
+            const response = await fetch(data_url);
+
+            if(!response.ok) {
+                throw new Error('Network response was not OK.');
+            }
+
+            const data = response.json();
+            return data;
+        }
+
+    
+    getData()
+        .then (data => {
+            console.log(data);
+        })
+        .catch (error => {
+            console.log('There has been a problem with fetch operation.', error);
+        })
+        
+
+    }
+
+    function func1 () {
+        item.textContent = "HP"
+        console.log(item);
+    }
+
+    document.addEventListener("mouseover", function(e) {
+        let tooltip = "";
+        let tooltipDiv = document.querySelector(".tooltip-div");
+        // tooltipHover(tar);
+        let elements = Array.from(document.querySelectorAll(".hover-reveal"));
+
+        console.log(tooltip);
+        console.log(tooltipDiv);
+        console.log(elements);
+
+    });
 
     animate();
 })
