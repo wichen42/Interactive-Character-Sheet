@@ -112,8 +112,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
             .then (data => {
                 tooltip = data.desc;
                 tooltipDiv.innerHTML = tooltip;
-                tooltipDiv.style.top = e.pageY + "px";
-                tooltipDiv.style.left = e.pageX + "px";
+                console.log(item.offsetWidth)
+                console.log(item.offsetHeight)
+                // tooltipDiv.style.top = item.top + "px";
+                tooltipDiv.style.top = item.offsetTop + "px";
+
+                tooltipDiv.style.left = item.offsetLeft + "px";
                 tooltipDiv.style.opacity = 1;
                 
                 item.addEventListener("mouseleave", function(e) {

@@ -584,6 +584,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  height: 100px;
+  width: 300px;
+  overflow: hidden;
   background: blueviolet;
   color: whitesmoke;
   padding: 10px 20px;
