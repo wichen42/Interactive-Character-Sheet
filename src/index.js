@@ -5,6 +5,7 @@ const mage = require('./scripts/mage');
 const archer = require('./scripts/archer');
 const { async } = require('regenerator-runtime');
 const tooltipHover = require('./scripts/hover');
+const stat_mod = require('./scripts/stat_mod');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let stagger = 0;
 
     let frameX = 0;
-    let frameY = 1;
+    let frameY = 0;
     let frame = 0;
 
     document.addEventListener('change', function (e) {
@@ -94,7 +95,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     document.addEventListener("mouseover", function(e) {
         let item = e.target;
-        let tooltip = "";
         let tooltipDiv = document.querySelector(".tooltip-div");
 
         async function makeTooltip(url) {
@@ -110,8 +110,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         makeTooltip(item.dataset.url)
             .then (data => {
-                tooltip = data.desc;
-                tooltipDiv.innerHTML = tooltip;
+                tooltipDiv.innerHTML = data.desc;
                 console.log(item.offsetWidth)
                 console.log(item.offsetHeight)
                 tooltipDiv.style.top = item.offsetTop + "px";
@@ -129,5 +128,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
 
+    
+    stat_mod();
     animate();
 })
