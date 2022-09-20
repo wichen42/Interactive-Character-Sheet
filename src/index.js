@@ -76,8 +76,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, 0, -50, canvas.width, canvas.height);
-        // ctx.drawImage(mage, frameX * 231, frameY * 192, 231, 192, 0, 0, canvas.width, canvas.height)
-        if(frame % stagger === 5) {
+        if(frame % stagger === 0) {
             if (frameX < stagger-1) {
                 frameX++;
             } else {
@@ -91,19 +90,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
 
-    var item = document.getElementById("hp-label");
-    item.addEventListener("mouseover", func, false);
-    item.addEventListener("mouseout", func1, false);
 
-    function func () {
-    
-        item.textContent = "Hit Points"
-        item.dataset.tooltip = "Changed"
+    document.addEventListener("mouseover", function(e) {
+        let item = e.target;
+        let tooltip = "";
+        let tooltipDiv = document.querySelector(".tooltip-div");
+        let elements = Array.from(document.querySelectorAll(".hover-reveal"));
 
-        let data_url = "https://www.dnd5eapi.co/api/rule-sections/damage-and-healing";
+        // console.log(tooltip);
+        // console.log(tooltipDiv);
+        // console.log(elements);
 
-        async function getData(data_url) {
-            const response = await fetch(data_url);
+        async function makeTooltip(url) {
+            const response = await fetch(url);
 
             if(!response.ok) {
                 throw new Error('Network response was not OK.');
@@ -112,34 +111,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const data = response.json();
             return data;
         }
-
-    
-    getData()
-        .then (data => {
-            console.log(data);
-        })
-        .catch (error => {
-            console.log('There has been a problem with fetch operation.', error);
-        })
         
+        makeTooltip(item.dataset.url)
+            .then (data => {
+                tooltip = data.desc;
+                console.log(tooltip);
+                
+            })
+            .catch (error => {
+                console.log('There has been a problem with fetch operation.', error);
+            })
 
-    }
-
-    function func1 () {
-        item.textContent = "HP"
-        console.log(item);
-    }
-
-    document.addEventListener("mouseover", function(e) {
-        let tooltip = "";
-        let tooltipDiv = document.querySelector(".tooltip-div");
-        // tooltipHover(tar);
-        let elements = Array.from(document.querySelectorAll(".hover-reveal"));
-
-        console.log(tooltip);
-        console.log(tooltipDiv);
-        console.log(elements);
-
+       
     });
 
     animate();
