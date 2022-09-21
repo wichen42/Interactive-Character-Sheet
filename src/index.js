@@ -77,10 +77,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    let background = new Image();
+    background.src = './assets/Background.png';
 
     function animate () {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+        ctx.drawImage(background, 0, 0, 0, 0, 0, 0, canvas.width, canvas.height);
         ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, 0, -50, canvas.width, canvas.height);
         if(frame % stagger === 0) {
             if (frameX < stagger-1) {
