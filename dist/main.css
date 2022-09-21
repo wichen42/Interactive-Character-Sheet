@@ -137,21 +137,21 @@ table {
 
 #character-sheet-stats {
     display: grid;
-    border: 1px solid red;
     grid-auto-rows: 1fr;
     width: 100%;
+    background-color: rgba(251, 247, 245, 0.89);
     
 }
 
 .character-sheet-survival-stats {
     display: flex;
-    border: 1px solid red;
     flex-direction: column;
     margin: 35px;
     border-radius: 25px;
     border: 2px solid black;
     flex-grow: 3;
     justify-content: center;
+    background-color: rgba(251, 247, 245, 0.89);
     align-items: center;
 }
 
@@ -159,7 +159,6 @@ table {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    border: 1px solid red;
     gap: 10px;
     place-items: center;
     padding-top: 10px;
@@ -195,7 +194,6 @@ table {
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -227,7 +225,6 @@ table {
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -285,7 +282,6 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     flex-grow: 1;
 
 }
@@ -297,7 +293,6 @@ table {
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 2;
-    border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -317,7 +312,6 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     flex-grow: 1;
 }
 
@@ -327,7 +321,6 @@ table {
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 2;
-    border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -350,7 +343,6 @@ table {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    border: 1px solid red;
 }
 
 #constitution-skills {
@@ -358,7 +350,6 @@ table {
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 2;
-    border: 1px solid red;
     align-items: center;
     padding-left: 10px;
     padding-top: 10px;
@@ -384,7 +375,6 @@ table {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    border: 1px solid red;
 }
 
 #intelligence-skills {
@@ -393,7 +383,6 @@ table {
     justify-content: space-evenly;
     flex-grow: 2;
     align-items: center;
-    border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -417,7 +406,6 @@ table {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    border: 1px solid red;
 }
 
 #wisdom-skills {
@@ -426,7 +414,6 @@ table {
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 2;
-    border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -450,7 +437,6 @@ table {
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    border: 1px solid red;
 }
 
 #charisma-skills {
@@ -459,7 +445,6 @@ table {
     justify-content: space-evenly;
     align-items: center;
     flex-grow: 2;
-    border: 1px solid red;
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -482,7 +467,8 @@ table {
     width: 100%;
     height: 100px;
     border-radius: 25px;
-    border: 2px solid green;
+    border: 2px solid black;
+    background-color: rgba(251, 247, 245, 0.89);
     
 }
 
@@ -498,7 +484,6 @@ table {
     display: inline-flex;
     justify-content: space-evenly;
     flex-grow: 3;
-    border: 1px solid red;
 }
 
 #nav-links {
@@ -508,7 +493,6 @@ table {
     justify-content: space-evenly;
     text-align: center;
     flex-grow: 1;
-    border: 1px solid red;
 }
 
 #character-details-section-1 {
@@ -527,26 +511,22 @@ table {
 #class {
     width: 100%;
     height: 50%;
-    border: 1px solid red;
 }
 
 #state{
     width: 100%;
     height: 50%;
-    border: 1px solid red;
 }
 
 #race {
     width: 100%;
     height: 50%;
-    border: 1px solid red;
 }
 
 #ailment {
     width: 100%;
     height: 50%;
     display: inline;
-    border: 1px solid red;
 }
 
 
@@ -563,6 +543,7 @@ table {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    background-color: rgba(251, 247, 245, 0.89);
     justify-content: space-evenly;
 
 }
@@ -571,6 +552,7 @@ table {
     width: 600px;
     height: 600px;
     border: 2px solid black;
+    padding: 15px;
 }
 
 #character-canvas {
@@ -611,6 +593,10 @@ table {
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+@font-face {
+  font-family: dnd;
+  src: url("/assets/dnd_font.TTF");
+}
 body {
   display: flex;
   flex-direction: column;
@@ -618,11 +604,16 @@ body {
   align-items: center;
   width: auto;
   margin: 10px;
+  background-color: white;
+  background-image: url("/assets/grid.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: dnd;
+  font-size: 25px;
 }
 
 #character-sheet-body {
   display: flex;
-  border: solid 1px black;
   width: 100%;
 }
 

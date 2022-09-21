@@ -3,6 +3,10 @@
 @import url(./styles/char-sheet-header.scss);
 @import url(./styles/char-attacks-spells.scss);
 
+@font-face {
+    font-family: dnd;
+    src: url('/assets/dnd_font.TTF');
+}
 body {
     display: flex;
     flex-direction: column;
@@ -10,11 +14,16 @@ body {
     align-items: center;
     width: auto;
     margin: 10px;
+    background-color: white;
+    background-image: url('/assets/grid.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: dnd;
+    font-size: 25px;
 }
 
 #character-sheet-body {
     display: flex;
-    border: solid 1px black;
     width: 100%;
 }
 
