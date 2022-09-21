@@ -57,31 +57,37 @@ table {
 #str {
     width:  40px;
     height: 40px;
+    margin-top: 50px;
 }
 
 #dex {
     width: 40px;
     height: 40px;
+    margin-top: 20px;
 }
 
 #con {
     width: 40px;
     height: 40px;
+    margin-top: 50px;
 }
 
 #int {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 #wis {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 #cha {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 .str_mod {
@@ -140,6 +146,7 @@ table {
     grid-auto-rows: 1fr;
     width: 100%;
     background-color: rgba(251, 247, 245, 0.89);
+    border-radius: 25px;
     
 }
 
@@ -159,15 +166,22 @@ table {
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     place-items: center;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
+#hp-label {
+    margin-right: 10px;
+}
 
 #hp {
     height: 50px;
     text-align: center;
+}
+
+#temp-hp-label {
+    margin-right: 25px;
 }
 
 #temp-hp {
@@ -175,9 +189,17 @@ table {
     text-align: center;
 }
 
+#ac-label {
+    margin-right: 37px;
+}
+
 #ac {
     height: 50px;
     text-align: center;
+}
+
+#hit-dice-label {
+    margin-right: 25px;
 }
 
 #hit-dice {
@@ -474,10 +496,19 @@ table {
 
 #character-name {
     display: inline-flex;
+    flex-grow: 1;
+}
+
+#character-name-box {
+    display: inline-flex;
     justify-content: center;
     flex-grow: 1;
-    border: 1px solid black;
     text-align: center;
+    font-size: 36px;
+    background: rgba(204, 204, 204, 0);
+    outline: none !important;
+    border: none;
+    text-decoration: underline;
 }
 
 .character-details {
@@ -501,7 +532,6 @@ table {
 }
 
 
-
 #character-details-section-2 {
 
     width: 50%;
@@ -509,21 +539,29 @@ table {
 
 
 #class {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #state{
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #race {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #ailment {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
     display: inline;
@@ -610,6 +648,11 @@ body {
   background-position: center;
   font-family: dnd;
   font-size: 25px;
+}
+
+input {
+  font-family: dnd;
+  font-size: 24px;
 }
 
 #character-sheet-body {

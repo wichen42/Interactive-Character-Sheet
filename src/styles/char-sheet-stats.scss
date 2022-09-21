@@ -3,31 +3,37 @@
 #str {
     width:  40px;
     height: 40px;
+    margin-top: 50px;
 }
 
 #dex {
     width: 40px;
     height: 40px;
+    margin-top: 20px;
 }
 
 #con {
     width: 40px;
     height: 40px;
+    margin-top: 50px;
 }
 
 #int {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 #wis {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 #cha {
     width: 40px;
     height: 40px;
+    margin-top: 15px;
 }
 
 .str_mod {
@@ -86,6 +92,7 @@
     grid-auto-rows: 1fr;
     width: 100%;
     background-color: rgba(251, 247, 245, 0.89);
+    border-radius: 25px;
     
 }
 
@@ -105,15 +112,22 @@
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     place-items: center;
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
+#hp-label {
+    margin-right: 10px;
+}
 
 #hp {
     height: 50px;
     text-align: center;
+}
+
+#temp-hp-label {
+    margin-right: 25px;
 }
 
 #temp-hp {
@@ -121,9 +135,17 @@
     text-align: center;
 }
 
+#ac-label {
+    margin-right: 37px;
+}
+
 #ac {
     height: 50px;
     text-align: center;
+}
+
+#hit-dice-label {
+    margin-right: 25px;
 }
 
 #hit-dice {

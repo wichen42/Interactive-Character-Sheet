@@ -22,6 +22,11 @@ body {
     font-size: 25px;
 }
 
+input {
+    font-family: dnd;
+    font-size: 24px;
+}
+
 #character-sheet-body {
     display: flex;
     width: 100%;
@@ -69,3 +74,4 @@ body {
 .ui-helper-hidden-accessible{
     display:none !important;
 }
+

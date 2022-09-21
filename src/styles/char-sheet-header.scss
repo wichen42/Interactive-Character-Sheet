@@ -14,10 +14,19 @@
 
 #character-name {
     display: inline-flex;
+    flex-grow: 1;
+}
+
+#character-name-box {
+    display: inline-flex;
     justify-content: center;
     flex-grow: 1;
-    border: 1px solid black;
     text-align: center;
+    font-size: 36px;
+    background: rgba(204, 204, 204, 0);
+    outline: none !important;
+    border: none;
+    text-decoration: underline;
 }
 
 .character-details {
@@ -41,7 +50,6 @@
 }
 
 
-
 #character-details-section-2 {
 
     width: 50%;
@@ -49,21 +57,29 @@
 
 
 #class {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #state{
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #race {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
 }
 
 #ailment {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 50%;
     display: inline;
