@@ -10,6 +10,7 @@ const autoEquip = require('./scripts/equipment-autocomplete');
 const add_equipment = require('./scripts/add_equipment');
 const add_inventory = require('./scripts/add_inventory');
 const add_attack = require('./scripts/add_attack');
+const hit_dice = require('./scripts/hit_dice');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -54,7 +55,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 image.src = './sprites_sheet/warrior_sprite_sheet.png';
                 player = warrior;
                 stagger = 10;
-                // player_class.dataset.url = "https://www.dnd5eapi.co/api/classes/barbarian";
                 console.log(player_class.url);
                 break;
             case 'thief':
@@ -166,6 +166,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
+    let dice = document.getElementById('hit-dice');
+    dice.addEventListener("click", function(){
+        hit_dice();
+    })
+
+    let initiative_button = document.getElementById("initiative-button");
+    let initiative_input = document.getElementById("initiative_input");
+    initiative_button.addEventListener("click", function(){
+        initiative_input.value = Math.floor(Math.random() * 21) + 1;
+    })
+
+    // console.log(hit_dice());
     autoEquip();
     stat_mod();
     animate();

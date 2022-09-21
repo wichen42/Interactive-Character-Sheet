@@ -245,6 +245,16 @@ table {
     align-items: center;
 }
 
+#initiative-button {
+    font-size: 32px;
+    height: 75px;
+    width: 100px;
+}
+
+#initiative_input {
+    text-align: center;
+}
+
 #character-initiative {
     display: flex;
     width: 100%;
