@@ -199,6 +199,30 @@ table {
     width: 100%;
 }
 
+#character-speed {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#character-initiative {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#character-perception {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#character-proficiency {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 .character-items {
     display: flex;
     justify-content: space-evenly;
@@ -636,6 +660,10 @@ body {
   z-index: 9001;
 }
 
-#item-hold {
+#hold {
   display: none;
+}
+
+.ui-helper-hidden-accessible {
+  display: none !important;
 }

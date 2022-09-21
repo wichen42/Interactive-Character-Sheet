@@ -13,9 +13,18 @@ function add_equipment(equip) {
         }
     }
 
-    let selected = document.getElementById(item_id);
-    let equip_list = document.getElementById('equipment');
-    equip_list.appendChild(selected);
+    let selected = document.getElementById(item_id); // search bar item
+    let equip_list = document.getElementById('equipment'); // ul list that holds equips
+    let url = selected.dataset.url;
+
+    let new_item = document.createElement("li");
+    new_item.dataset.url = url;
+    new_item.innerHTML = item;
+    console.log(new_item);
+
+    equip_list.appendChild(new_item);
+
+
 }
 
 module.exports = add_equipment;

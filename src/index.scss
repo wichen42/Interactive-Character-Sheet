@@ -53,6 +53,10 @@ body {
     z-index: 9001;
 }
 
-#item-hold {
+#hold {
     display: none;
+}
+
+.ui-helper-hidden-accessible{
+    display:none !important;
 }

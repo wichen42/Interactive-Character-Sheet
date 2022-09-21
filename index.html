@@ -141,7 +141,7 @@
             <section id="constitution-skills">
               <label class="attribute" data-url="https://www.dnd5eapi.co/api/ability-scores/con">Constitution</label>
               <section id="con-saving-throw">
-                <label for="acrobatics" id="con-saving-throw-label" data-url="https://www.dnd5eapi.co/api/skills/acrobatics">Saving Throw</label>
+                <label for="acrobatics" id="con-saving-throw-label" data-url="https://www.dnd5eapi.co/api/rule-sections/saving-throws">Saving Throw</label>
                 <input type="checkbox" name="constitution-saving-throw" id="con-saving-throw">
               </section>
             </section>
@@ -269,24 +269,24 @@
         <div class="character-health-armor">
 
             <section id="character-sheet-hp">
-              <label id="hp-label" class="hover-reveal" for="hp" 
+              <label id="hp-label" for="hp" 
               data-url="https://www.dnd5eapi.co/api/rule-sections/damage-and-healing">Health</label>
               <input type="number" id="hp" value="10">
             </section>
             
             <section id="character-temp-hp">
-              <label id="temp-hp-label" class="hover-reveal" for="temp-hp">Temp HP</label>
+              <label id="temp-hp-label"for="temp-hp">Temp HP</label>
                 <input type="number" id="temp-hp" value="5">
             </section>
 
 
             <section id="character-sheet-ac">
-              <label id="ac-label" class="hover-reveal" for="ac">AC</label>
+              <label id="ac-label" for="ac">AC</label>
               <input type="number" id="ac" value="10">
             </section>
   
             <section id="character-hit-dice">
-              <label id="hit-dice-label" class="hover-reveal" for="hit-dice">Hit Dice</label>
+              <label id="hit-dice-label" for="hit-dice">Hit Dice</label>
               <input type="button" id="hit-dice" value="Hit Dice">
             </section>
 
@@ -298,19 +298,23 @@
         <div class="character-misc-stats">
 
           <section id="character-speed">
-            <input type="text" id="speed" value="Speed">
+            <label id="speed" data-url="https://www.dnd5eapi.co/api/rule-sections/movement">Speed</label>
+            <input id="speed_input" type="number" name="speed">
           </section>
 
           <section id="character-initiative">
-            <input type="text" id="character-initiative" value="Initiative">
+            <label id="initiative" data-url="https://www.dnd5eapi.co/api/rule-sections/the-order-of-combat">Initiative</label>
+            <input id="initiative_input" type="number" name="initiative">
           </section>
 
           <section id="character-perception">
-            <input type="text" id="perception" value="Perception">
+            <label for="perception" data-url="https://www.dnd5eapi.co/api/proficiencies/skill-perception"">Perception</label>
+            <input id="perception_input" type="number" name="perception">
           </section>
 
           <section id="character-proficiency">
-            <input type="text" id="proficiency" value="Proficiency">
+            <label id="proficiency-bonus" data-url="https://www.dnd5eapi.co/api/rule-sections/proficiency-bonus">Proficiency</label>
+            <input id="proficiency_input" type="number" name="proficiency">
           </section>
 
         </div>
@@ -339,14 +343,6 @@
 
             <section id="inventory-list">
               <ul id="inventory">
-                <li id="disguise-kit" data-url="https://www.dnd5eapi.co/api/equipment/disguise-kit">Disguise Kit</li>
-                <li id="lamp" data-url="https://www.dnd5eapi.co/api/equipment/lamp">Lamp</li>
-                <li id="spyglass" data-url="https://www.dnd5eapi.co/api/equipment/spyglass">Spyglass</li>
-                <li id="tinderbox" data-url="https://www.dnd5eapi.co/api/equipment/tinderbox">Tinderbox</li>
-                <li id="torch" data-url="https://www.dnd5eapi.co/api/equipment/torch">Torch</li>
-                <li id="crowbar" data-url="https://www.dnd5eapi.co/api/equipment/crowbar">Crowbar</li>
-                <li id="flute" data-url="https://www.dnd5eapi.co/api/equipment/flute">Flute</li>
-                <li id="horn" data-url="https://www.dnd5eapi.co/api/equipment/horn">Horn</li>
               </ul>
             </section>
 
@@ -370,14 +366,6 @@
 
           <section id="attack-list">
             <ul id="attack-spell-list">
-              <li id="fireball" data-url="https://www.dnd5eapi.co/api/spells/fireball">Fireball</li>
-              <li id="haste" data-url="https://www.dnd5eapi.co/api/spells/haste">Haste</li>
-              <li id="acid-arrow" data-url="https://www.dnd5eapi.co/api/spells/acid-arrow">Acid Arrow</li>
-              <li id="shape-change" data-url="https://www.dnd5eapi.co/api/spells/shapechange">Shape Change</li>
-              <li id="call-lightning" data-url="https://www.dnd5eapi.co/api/spells/call-lightning">Call Lightning</li>
-              <li id="geas" data-url="https://www.dnd5eapi.co/api/spells/geas">Geas</li>
-              <li id="knock" data-url="https://www.dnd5eapi.co/api/spells/knock">Knock</li>
-              <li id="mirror-image" data-url="https://www.dnd5eapi.co/api/spells/mirror-image">Mirror Image</li>
             </ul>
           </section>
 
@@ -386,7 +374,8 @@
 
     </div>
 
-    <div id="item-hold">
+    <div id="hold">
+
       <li id="staff" data-url="https://www.dnd5eapi.co/api/equipment/staff">Staff</li>
       <li id="adamantine-armor" data-url="https://www.dnd5eapi.co/api/magic-items/adamantine-armor">Adamantine Armor</li>
       <li id="berserker-axe" data-url="https://www.dnd5eapi.co/api/magic-items/berserker-axe">Berserker Axe</li>
@@ -395,6 +384,24 @@
       <li id="broom-of-flying" data-url="https://www.dnd5eapi.co/api/magic-items/broom-of-flying">Broom of Flying</li>
       <li id="cloak-of-arachnida" data-url="https://www.dnd5eapi.co/api/magic-items/cloak-of-arachnida">Cloak of Arachnida</li>
       <li id="dagger-of-venom" data-url="https://www.dnd5eapi.co/api/magic-items/dagger-of-venom">Dagger of Venom</li>
+
+      <li id="disguise-kit" data-url="https://www.dnd5eapi.co/api/equipment/disguise-kit">Disguise Kit</li>
+      <li id="lamp" data-url="https://www.dnd5eapi.co/api/equipment/lamp">Lamp</li>
+      <li id="spyglass" data-url="https://www.dnd5eapi.co/api/equipment/spyglass">Spyglass</li>
+      <li id="tinderbox" data-url="https://www.dnd5eapi.co/api/equipment/tinderbox">Tinderbox</li>
+      <li id="torch" data-url="https://www.dnd5eapi.co/api/equipment/torch">Torch</li>
+      <li id="crowbar" data-url="https://www.dnd5eapi.co/api/equipment/crowbar">Crowbar</li>
+      <li id="flute" data-url="https://www.dnd5eapi.co/api/equipment/flute">Flute</li>
+      <li id="horn" data-url="https://www.dnd5eapi.co/api/equipment/horn">Horn</li>
+
+      <li id="fireball" data-url="https://www.dnd5eapi.co/api/spells/fireball">Fireball</li>
+      <li id="haste" data-url="https://www.dnd5eapi.co/api/spells/haste">Haste</li>
+      <li id="acid-arrow" data-url="https://www.dnd5eapi.co/api/spells/acid-arrow">Acid Arrow</li>
+      <li id="shape-change" data-url="https://www.dnd5eapi.co/api/spells/shapechange">Shape Change</li>
+      <li id="call-lightning" data-url="https://www.dnd5eapi.co/api/spells/call-lightning">Call Lightning</li>
+      <li id="geas" data-url="https://www.dnd5eapi.co/api/spells/geas">Geas</li>
+      <li id="knock" data-url="https://www.dnd5eapi.co/api/spells/knock">Knock</li>
+      <li id="mirror-image" data-url="https://www.dnd5eapi.co/api/spells/mirror-image">Mirror Image</li>
 
     </div>
 

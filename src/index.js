@@ -8,6 +8,8 @@ const tooltipHover = require('./scripts/hover');
 const stat_mod = require('./scripts/stat_mod');
 const autoEquip = require('./scripts/equipment-autocomplete');
 const add_equipment = require('./scripts/add_equipment');
+const add_inventory = require('./scripts/add_inventory');
+const add_attack = require('./scripts/add_attack');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -134,7 +136,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const equip_search = document.getElementById('equipment-item');
     const addEquip = document.getElementById('add-equipment');
-    
+
     addEquip.addEventListener("click", function(){
         if (equip_search.value !== "") {
             add_equipment();
@@ -142,8 +144,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     const inventory_search = document.getElementById('inventory-item');
+    const addItem = document.getElementById('add-item');
 
+    addItem.addEventListener("click", function() {
+        if (inventory_search.value !== "") {
+            add_inventory();
+        }
+    });
 
+    const attack_search = document.getElementById('attack-bar');
+    const addAttack = document.getElementById('add-attack');
+
+    addAttack.addEventListener("click", function(){
+        if (attack_search !== "") {
+            add_attack();
+        }
+    });
 
     autoEquip();
     stat_mod();
