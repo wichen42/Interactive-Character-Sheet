@@ -11,6 +11,7 @@ const add_equipment = require('./scripts/add_equipment');
 const add_inventory = require('./scripts/add_inventory');
 const add_attack = require('./scripts/add_attack');
 const hit_dice = require('./scripts/hit_dice');
+const speed_gen = require('./scripts/stat_gen');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -177,7 +178,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         initiative_input.value = Math.floor(Math.random() * 21) + 1;
     })
 
-    // console.log(hit_dice());
+    let race_select = document.getElementById("background-select");
+    race_select.addEventListener("change", function(){
+        speed_gen();
+    })
+
     autoEquip();
     stat_mod();
     animate();
