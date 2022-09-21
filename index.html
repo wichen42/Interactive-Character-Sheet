@@ -24,26 +24,28 @@
         </section>
         <div class="character-details">
           <div id="character-details-section-1">
-            <section id="class" data-url="">Class: 
-              <select id="class-select">
-                <option value="default">Please Select</option>
-                <option value="warrior">Warrior</option>
-                <option value="thief">Thief</option>
-                <option value="mage">Magician</option>
-                <option value="archer">Archer</option>
-              </select>
+            <section id="class" data-url="">
+                <label for="warrior">Warrior</label>
+                <input type="radio" value="warrior" id="warrior-radio" name="class-select">
+                <label for="thief">Thief</label>
+                <input type="radio" value="thief" id="thief-radio" name="class-select">
+                <label for="mage">Mage</label>
+                <input type="radio" value="mage" id="mage-radio" name="class-select">
+                <label for="archer">Archer</label>
+                <input type="radio" value="archer" id="archer-radio" name="class-select">
             </section>
-            <section id="state">Character State:
-              <select id="state-select">
-                <option value="default">Please Select</option>
-                <option value="idle">Idle</option>
-                <option value="battle">Battle</option>
-                <option value="death">Death</option>
-              </select>
+            <section id="state">
+                <label for="idle">Idle</label>
+                <input type="radio" value="idle" id="idle-radio" name="state-select">
+                <label for="battle">Battle</label>
+                <input type="radio" value="battle" id="battle-radio" name="state-select">
+                <label for="death">Death</label>
+                <input type="radio" value="death" id="death-radio" name="state-select">
             </section>
           </div>
           <div id="character-details-section-2">
-            <section id="race">Race:
+            <section id="race">
+              <label for="background-select">Race:</label>
               <select id="background-select">
                 <option value="default">Please Select</option>
                 <option value="dwarf">Dwarf</option>
@@ -269,8 +271,7 @@
         <div class="character-health-armor">
 
             <section id="character-sheet-hp">
-              <label id="hp-label" for="hp" 
-              data-url="https://www.dnd5eapi.co/api/rule-sections/damage-and-healing">Health</label>
+              <label id="hp-label" for="hp">Health</label>
               <input type="number" id="hp" value="10">
             </section>
             
@@ -405,7 +406,9 @@
 
     </div>
 
-    <div class="tooltip"></div>
+    <div class="tooltip">
+              
+    </div>
 
   </body>
 

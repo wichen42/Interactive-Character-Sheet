@@ -4,36 +4,54 @@
     width:  40px;
     height: 40px;
     margin-top: 50px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #dex {
     width: 40px;
     height: 40px;
     margin-top: 20px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #con {
     width: 40px;
     height: 40px;
     margin-top: 50px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #int {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #wis {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #cha {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .str_mod {
@@ -101,11 +119,12 @@
     flex-direction: column;
     margin: 35px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 3px solid black;
     flex-grow: 3;
     justify-content: center;
     background-color: rgba(251, 247, 245, 0.89);
     align-items: center;
+    padding: 15px;
 }
 
 .character-health-armor {
@@ -169,23 +188,27 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #character-initiative {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 #character-perception {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 #character-proficiency {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -213,6 +236,7 @@
     border: 2px solid black;
     border-radius: 25px;
     flex-grow: 1;
+    margin-right: 5px;
 
 }
 
@@ -236,12 +260,14 @@
     border: 2px solid black;
     border-radius: 25px;
     flex-grow: 1;
+    margin-left: 5px;
 }
 
 
 #character-attributes-section-str {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -272,7 +298,7 @@
 
 #character-attributes-section-dex {
     display: flex;
-
+    border-bottom: 2px solid black;
 }
 
 #character-dexterity {
@@ -302,6 +328,7 @@
 #character-attributes-section-con {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -333,6 +360,7 @@
 #character-attributes-section-int {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -365,6 +393,7 @@
 #character-attributes-section-wis {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 

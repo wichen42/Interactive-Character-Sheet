@@ -19,7 +19,8 @@ body {
     background-size: cover;
     background-position: center;
     font-family: dnd;
-    font-size: 25px;
+    font-size: 30px;
+    
 }
 
 input {
@@ -57,14 +58,19 @@ input {
     top: 0;
     left: 0;
     height: 100px;
-    width: 500px;
-    overflow: hidden;
-    background: blueviolet;
-    color: whitesmoke;
+    width: 400px;
+    overflow-y: auto;
+    background: lightgray;
+    color: black;
     padding: 10px 20px;
     margin: 20px;
     border: 1px solid black;
     z-index: 9001;
+    border-radius: 15px;
+}
+
+.tooltip::-webkit-scrollbar {
+    display: none;
 }
 
 #hold {
@@ -73,5 +79,10 @@ input {
 
 .ui-helper-hidden-accessible{
     display:none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
 }
 

@@ -123,11 +123,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 tooltip.style.left = item.offsetLeft + "px";
                 tooltip.style.opacity = 1;
                 tooltip.style.transitionDuration = "1s"
+                tooltip.style.zIndex = 100;
                 
                 item.addEventListener("mouseleave", function(e) {
                     tooltip.innerHTML = "";
                     tooltip.style.opacity = 0;
                     tooltip.style.transitionDuration = "1s"
+                    tooltip.style.zIndex = 0;
+
                 })
             })
             .catch (error => {

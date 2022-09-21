@@ -24,6 +24,8 @@ function add_equipment(equip) {
 
     equip_list.appendChild(new_item);
 
+    searched.value = "";
+
 
 }
 

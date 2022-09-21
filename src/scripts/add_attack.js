@@ -15,6 +15,9 @@ function add_inventory() {
     let selected = document.getElementById(attack_id);
     let attack_list = document.getElementById('attack-spell-list');
     attack_list.appendChild(selected);
+
+    searched.value = "";
+
 }
 
 module.exports = add_inventory;

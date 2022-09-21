@@ -58,36 +58,54 @@ table {
     width:  40px;
     height: 40px;
     margin-top: 50px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #dex {
     width: 40px;
     height: 40px;
     margin-top: 20px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #con {
     width: 40px;
     height: 40px;
     margin-top: 50px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #int {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #wis {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #cha {
     width: 40px;
     height: 40px;
     margin-top: 15px;
+    -webkit-appearance: none;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .str_mod {
@@ -155,11 +173,12 @@ table {
     flex-direction: column;
     margin: 35px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 3px solid black;
     flex-grow: 3;
     justify-content: center;
     background-color: rgba(251, 247, 245, 0.89);
     align-items: center;
+    padding: 15px;
 }
 
 .character-health-armor {
@@ -223,23 +242,27 @@ table {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #character-initiative {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 #character-perception {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 #character-proficiency {
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -267,6 +290,7 @@ table {
     border: 2px solid black;
     border-radius: 25px;
     flex-grow: 1;
+    margin-right: 5px;
 
 }
 
@@ -290,12 +314,14 @@ table {
     border: 2px solid black;
     border-radius: 25px;
     flex-grow: 1;
+    margin-left: 5px;
 }
 
 
 #character-attributes-section-str {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -326,7 +352,7 @@ table {
 
 #character-attributes-section-dex {
     display: flex;
-
+    border-bottom: 2px solid black;
 }
 
 #character-dexterity {
@@ -356,6 +382,7 @@ table {
 #character-attributes-section-con {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -387,6 +414,7 @@ table {
 #character-attributes-section-int {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -419,6 +447,7 @@ table {
 #character-attributes-section-wis {
     display: flex;
     flex-grow: 1;
+    border-bottom: 2px solid black;
 }
 
 
@@ -533,7 +562,10 @@ table {
 
 
 #character-details-section-2 {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 }
 
@@ -543,12 +575,14 @@ table {
     align-items: center;
     width: 100%;
     height: 50%;
+    justify-content: space-evenly;
 }
 
 #state{
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-evenly;
     height: 50%;
 }
 
@@ -559,13 +593,19 @@ table {
     height: 50%;
 }
 
+#background-select {
+    margin-left: 15px;
+}
+
 #ailment {
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-evenly;
     height: 50%;
     display: inline;
 }
+
 
 
 /*!*******************************************************************************************************************!*\
@@ -577,7 +617,7 @@ table {
     flex-direction: column;
     margin: 35px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 3px solid black;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
@@ -589,8 +629,10 @@ table {
 #model-canvas {
     width: 600px;
     height: 600px;
-    border: 2px solid black;
-    padding: 15px;
+    margin: 25px;
+    margin-top: 35px;
+    border: 10px solid black;
+    border-radius: 10px;
 }
 
 #character-canvas {
@@ -609,6 +651,7 @@ table {
     justify-content: space-evenly;
     border: 1px solid black;
     border-radius: 25px;
+    border: 3px solid black;
 }
 
 #attack-spell-list {
@@ -647,7 +690,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: dnd;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 input {
@@ -684,14 +727,19 @@ input {
   top: 0;
   left: 0;
   height: 100px;
-  width: 500px;
-  overflow: hidden;
-  background: blueviolet;
-  color: whitesmoke;
+  width: 400px;
+  overflow-y: auto;
+  background: lightgray;
+  color: black;
   padding: 10px 20px;
   margin: 20px;
   border: 1px solid black;
   z-index: 9001;
+  border-radius: 15px;
+}
+
+.tooltip::-webkit-scrollbar {
+  display: none;
 }
 
 #hold {
@@ -700,4 +748,9 @@ input {
 
 .ui-helper-hidden-accessible {
   display: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }

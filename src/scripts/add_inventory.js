@@ -16,6 +16,9 @@ function add_inventory() {
     let selected = document.getElementById(item_id);
     let inventory_list = document.getElementById('inventory');
     inventory_list.appendChild(selected);
+
+    searched.value = "";
+
 }
 
 module.exports = add_inventory;
