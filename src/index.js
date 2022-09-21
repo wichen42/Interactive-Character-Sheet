@@ -6,6 +6,8 @@ const archer = require('./scripts/archer');
 const { async } = require('regenerator-runtime');
 const tooltipHover = require('./scripts/hover');
 const stat_mod = require('./scripts/stat_mod');
+const autoEquip = require('./scripts/equipment-autocomplete');
+const add_equipment = require('./scripts/add_equipment');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -50,7 +52,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 image.src = './sprites_sheet/warrior_sprite_sheet.png';
                 player = warrior;
                 stagger = 10;
-                player_class.dataset.url = "https://www.dnd5eapi.co/api/classes/barbarian";
+                // player_class.dataset.url = "https://www.dnd5eapi.co/api/classes/barbarian";
                 console.log(player_class.url);
                 break;
             case 'thief':
@@ -127,10 +129,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
             .catch (error => {
                 console.log('There has been a problem with fetch operation.', error);
             })
+
     });
 
-
+    const equip_search = document.getElementById('equipment-item');
+    const addEquip = document.getElementById('add-equipment');
     
+    addEquip.addEventListener("click", function(){
+        if (equip_search.value !== "") {
+            add_equipment();
+        }
+    });
+
+    const inventory_search = document.getElementById('inventory-item');
+
+
+
+    autoEquip();
     stat_mod();
     animate();
 })

@@ -444,6 +444,8 @@ table {
     display: inline-block;
     width: 150px;
 }
+
+
 /*!*****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/char-sheet-header.scss ***!
   \*****************************************************************************************************************/
@@ -572,7 +574,7 @@ table {
 }
 
 #attack-spell-list li {
-    margin: 15px;
+    margin: 10px;
 }
 
 #attack-list {
@@ -632,4 +634,8 @@ body {
   margin: 20px;
   border: 1px solid black;
   z-index: 9001;
+}
+
+#item-hold {
+  display: none;
 }
