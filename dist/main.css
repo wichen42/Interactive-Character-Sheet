@@ -259,6 +259,14 @@ table {
     text-align: center;
 }
 
+#perception_input {
+    text-align: center;
+}
+
+#proficiency_input {
+    text-align: center;
+}
+
 #character-initiative {
     display: flex;
     width: 100%;

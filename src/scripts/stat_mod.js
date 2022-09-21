@@ -93,6 +93,7 @@ function stat_mod () {
             wis_mod.innerHTML = w_mod
         } else {
             wis_mod.innerHTML = `+${w_mod}`;
+            wis_mod.setAttribute("data-mod", w_mod);
         }
     })
 

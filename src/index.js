@@ -12,6 +12,7 @@ const add_inventory = require('./scripts/add_inventory');
 const add_attack = require('./scripts/add_attack');
 const hit_dice = require('./scripts/hit_dice');
 const speed_gen = require('./scripts/stat_gen');
+const perception_gen = require('./scripts/perception_gen');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -181,6 +182,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let race_select = document.getElementById("background-select");
     race_select.addEventListener("change", function(){
         speed_gen();
+    })
+
+    let wisdom_stat = document.getElementById("wis");
+    wisdom_stat.addEventListener("change", function(){
+        perception_gen();
     })
 
     autoEquip();
