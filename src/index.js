@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     document.addEventListener("mouseover", function(e) {
         let item = e.target;
-        let tooltipDiv = document.querySelector(".tooltip-div");
+        let tooltip = document.querySelector(".tooltip");
 
         async function makeTooltip(url) {
             const response = await fetch(url);
@@ -110,16 +110,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
         makeTooltip(item.dataset.url)
             .then (data => {
-                tooltipDiv.innerHTML = data.desc;
+                tooltip.innerHTML = data.desc;
                 console.log(item.offsetWidth)
                 console.log(item.offsetHeight)
-                tooltipDiv.style.top = item.offsetTop + "px";
-                tooltipDiv.style.left = item.offsetLeft + "px";
-                tooltipDiv.style.opacity = 1;
+                tooltip.style.top = item.offsetTop + "px";
+                tooltip.style.left = item.offsetLeft + "px";
+                tooltip.style.opacity = 1;
+                tooltip.style.transitionDuration = "1s"
                 
                 item.addEventListener("mouseleave", function(e) {
-                    tooltipDiv.innerHTML = "";
-                    tooltipDiv.style.opacity = 0;
+                    tooltip.innerHTML = "";
+                    tooltip.style.opacity = 0;
+                    tooltip.style.transitionDuration = "1s"
                 })
             })
             .catch (error => {

@@ -37,13 +37,13 @@ body {
     flex-grow: 2;
 }
 
-.tooltip-div {
+.tooltip {
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     height: 100px;
-    width: 300px;
+    width: 500px;
     overflow: hidden;
     background: blueviolet;
     color: whitesmoke;
