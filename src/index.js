@@ -4,7 +4,6 @@ const thief = require('./scripts/thief')
 const mage = require('./scripts/mage');
 const archer = require('./scripts/archer');
 const { async } = require('regenerator-runtime');
-const tooltipHover = require('./scripts/hover');
 const stat_mod = require('./scripts/stat_mod');
 const autoEquip = require('./scripts/equipment-autocomplete');
 const add_equipment = require('./scripts/add_equipment');
