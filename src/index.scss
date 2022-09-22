@@ -26,6 +26,7 @@ body {
 input {
     font-family: dnd;
     font-size: 24px;
+    border: 1px solid black;
 }
 
 #character-sheet-body {
@@ -48,7 +49,7 @@ input {
     border: 2px solid black;
     margin: 35px;
     justify-content: space-evenly;
-    border-radius: 25px;
+    border-radius: 10px;
     flex-grow: 2;
 }
 
