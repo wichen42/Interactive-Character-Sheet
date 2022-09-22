@@ -299,10 +299,11 @@ There are many sections on a character sheet that can be included that may not h
 - Quest Journal
 
 **Acknowledgment and Credits**
-- Knight Sprite Pack: created by aamatniekss - https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character
-- Wizard Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/wizard-pack
-- Huntresss Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/huntress-2
-- Wind Hashin Sprite Pack: created by chierit - https://chierit.itch.io/elementals-wind-hashashin
+<br>
+- [Knight Sprite Pack: Created by aamatniekss](https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character)
+- [Wizard Sprite Pack: Created by LuizMelo](https://luizmelo.itch.io/wizard-pack)
+- [Huntresss Sprite Pack: Created by LuizMelo](https://luizmelo.itch.io/huntress-2)
+- [Wind Hashin Sprite Pack: Created by chierit](https://chierit.itch.io/elementals-wind-hashashin)
 
 <br>
 
