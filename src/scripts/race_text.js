@@ -40,7 +40,7 @@ function race_text() {
         elf.style.display = "none";
         halfOrc.style.display = "flex";
         tiefling.style.display = "none";
-    } else if (player_race.race === "tiefling") {
+    } else if (player_race === "tiefling") {
         dwarf.style.display = "none";
         human.style.display = "none";
         elf.style.display = "none";

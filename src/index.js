@@ -206,6 +206,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
         race_text();
     })
 
+    let perception_stat = document.getElementById("perception_input");
+    let wisdom_mod = document.querySelector(".wis_mod");
+
+    document.getElementById("wis").onchange = function () {
+
+        if(document.getElementById("perception-check").checked) {
+            console.log("checked")
+            console.log(wis.value)
+            if (wis.value === 1) {
+                perception_stat.value = -5;
+            }
+        }
+    }
+
     autoEquip();
     stat_mod();
     animate();
