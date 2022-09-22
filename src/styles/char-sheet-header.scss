@@ -67,12 +67,69 @@
     justify-content: space-evenly;
 }
 
-#state{
+#state {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-evenly;
     height: 50%;
+}
+
+#idle-section {
+display: inline-flex;
+}
+
+#idle-radio {
+    margin-left: 10px;
+}
+
+#battle-section {
+    display: inline-flex;
+}
+
+#battle-radio {
+    margin-left: 10px;
+}
+
+#death-section {
+    display: inline-flex;
+    }
+    
+#death-radio {
+    margin-left: 10px;
+}
+
+
+#warrior-section {
+    display: inline-flex;
+    }
+    
+#warrior-radio {
+    margin-left: 10px;
+}
+
+#thief-section {
+    display: inline-flex;
+}
+
+#thief-radio {
+    margin-left: 10px;
+}
+
+#mage-section {
+    display: inline-flex;
+    }
+    
+#mage-radio {
+    margin-left: 10px;
+}
+
+#archer-section {
+    display: inline-flex;
+    }
+    
+#archer-radio {
+    margin-left: 10px;
 }
 
 #race {
@@ -88,11 +145,10 @@
 
 #ailment {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-evenly;
-    height: 50%;
-    display: inline;
+    align-items: center;
 }
+
 
 

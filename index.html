@@ -25,22 +25,39 @@
         <div class="character-details">
           <div id="character-details-section-1">
             <section id="class" data-url="">
+              <section id="warrior-section">
                 <label for="warrior">Warrior</label>
                 <input type="radio" value="warrior" id="warrior-radio" name="class-select">
+              </section>
+              <section id="thief-section">
                 <label for="thief">Thief</label>
                 <input type="radio" value="thief" id="thief-radio" name="class-select">
+              </section>
+              <section id="mage-section">
                 <label for="mage">Mage</label>
                 <input type="radio" value="mage" id="mage-radio" name="class-select">
+              </section>
+              <section id="archer-section">
                 <label for="archer">Archer</label>
                 <input type="radio" value="archer" id="archer-radio" name="class-select">
+              </section>
             </section>
             <section id="state">
-                <label for="idle">Idle</label>
-                <input type="radio" value="idle" id="idle-radio" name="state-select">
-                <label for="battle">Battle</label>
-                <input type="radio" value="battle" id="battle-radio" name="state-select">
-                <label for="death">Death</label>
-                <input type="radio" value="death" id="death-radio" name="state-select">
+                <section id="idle-section">
+                  <label for="idle">Idle</label>
+                  <input type="radio" value="idle" id="idle-radio" name="state-select">
+                </section>
+
+                <section id="battle-section">
+                  <label for="battle">Battle</label>
+                  <input type="radio" value="battle" id="battle-radio" name="state-select">  
+                </section>
+
+                <section id="death-section">
+                  <label for="death">Death</label>
+                  <input type="radio" value="death" id="death-radio" name="state-select">  
+                </section>
+
             </section>
           </div>
           <div id="character-details-section-2">
@@ -56,14 +73,18 @@
               </select>
             </section>
             <section id="ailment">Status: 
-              <label for="poison" data-url="https://www.dnd5eapi.co/api/conditions/poisoned">Poison</label>
-              <input type="radio" name="status" id="poison">
-              
-              <label for="petrified" data-url="https://www.dnd5eapi.co/api/conditions/petrified">Petrify</label>
-              <input type="radio" name="status" id="petrified">
-  
-              <label for="unconscious" data-url="https://www.dnd5eapi.co/api/conditions/unconscious">Unconscious</label>
-              <input type="radio" name="status" id="unconscious">
+              <section id="poison-section">
+                <label for="poison" data-url="https://www.dnd5eapi.co/api/conditions/poisoned">Poison</label>
+                <input type="radio" name="status" id="poison">  
+              </section>
+              <section id="petrified-section">
+                <label for="petrified" data-url="https://www.dnd5eapi.co/api/conditions/petrified">Petrify</label>
+                <input type="radio" name="status" id="petrified">  
+              </section>
+              <section id="unconscious-section">
+                <label for="unconscious" data-url="https://www.dnd5eapi.co/api/conditions/unconscious">Unconscious</label>
+                <input type="radio" name="status" id="unconscious">  
+              </section>  
             </section>  
           </div>
         </div>
