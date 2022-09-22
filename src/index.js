@@ -133,8 +133,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 button.style.top = 0;
                 button.style.right = 0;
                 button.style.bottom = 5;
-                button.style.left = 10;
-                button.style.borderRadius = "5px";
+                button.style.left = 20;
+                button.style.borderRadius = "4px";
                 tooltip.appendChild(button);
 
                 button.addEventListener("click", function(e) {

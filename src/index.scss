@@ -35,7 +35,11 @@ select {
 }
 
 button {
-    border: 2px solid black;
+    border: none;
+    background: none;
+    font-family: dnd;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #character-sheet-body {
