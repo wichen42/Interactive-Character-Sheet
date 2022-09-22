@@ -46,6 +46,51 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 <br>
 
+Sprite Animation occurs on canvas via drawImage and simple loop logic. Script utilizes a stagger frame to slow down speed of animation loop. 
+
+```javascript
+    var canvas = document.getElementById("model-canvas");
+    var parent = document.getElementById("character-canvas");
+
+    canvas.width = parent.offsetWidth;
+    canvas.height = parent.offsetHeight;
+
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "grey";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    const image = new Image();
+    image.src = './sprites_sheet/warrior_sprite_sheet.png';
+    
+    let background = new Image();
+    background.src = './assets/Background.png';
+    
+    let stagger = 0;
+    let frameX = 0;
+    let frameY = 0;
+    let frame = 0;
+    
+    
+    function animate () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(background, 0,0, canvas.width, canvas.height);
+    ctx.drawImage(image, frameX * player.width, frameY * player.height, player.width, player.height, player.offsetWidth, player.offsetHeight, canvas.width, canvas.height);
+    if(frame % stagger === 0) {
+        if (frameX < stagger-1) {
+            frameX++;
+        } else {
+            frameX = 0;
+        }
+    }
+
+    frame++;
+
+    requestAnimationFrame(animate);
+}
+```
+
+<br>
+
 <br>
 
 -Auto-complete Search
@@ -53,6 +98,44 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 <br>
 
 ![addAttack](https://user-images.githubusercontent.com/103459101/191825121-0ee5a9c3-2c00-4cd5-8ca7-5542d06fe0da.gif)
+
+<br>
+
+Auto-complete search funtionality is achieved with the jQuery auto-complete library. Currently equipment, items, attacks / spells are prepopulated due to limitations of the DnD 5e API. User input for searched item / attack is sanitized and converted into the element id value. Script utilizes dom manipulation to target correct element in a hidden container and appends selected item / attack into a list.
+
+<br>
+
+```javascript
+function add_attack() {
+
+    const searched = document.getElementById('attack-bar');
+    let item = searched.value;
+    let attack_id = ""
+
+    for (let i = 0; i < item.length; i++) {
+        if (item[i] === " ") {
+            attack_id += "-";
+        } else {
+            attack_id += item[i].toLowerCase();
+        }
+    }
+
+    let selected = document.getElementById(attack_id);
+    let attack_list = document.getElementById('attack-spell-list');
+    attack_list.appendChild(selected);
+
+    searched.value = "";
+}
+
+const attack_search = document.getElementById('attack-bar');
+const addAttack = document.getElementById('add-attack');
+
+addAttack.addEventListener("click", function(){
+    if (attack_search !== "") {
+        add_attack();
+    }
+});
+```
 
 <br>
 
@@ -64,6 +147,9 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 <br>
 
+Elements store an api endpoint in a data attribute. On hover script fires in the background to fetch data from the DnD 5e API. The tooltips's innerHTML is then populated with the data and moves to the "hovered" element's position. Tooltip size is predefined, if there is a large amount of data user is able to hover over tooltip to scroll up / down. An exit button is also dynamically created and appended to the tooltip.
+
+<br>
 ```javascript
   <section id="survival">
     <label for="survival" id="survival-label" data-url="https://www.dnd5eapi.co/api/skills/survival">Survival</label>
@@ -151,5 +237,5 @@ There are many sections on a character sheet that can be included that may not h
 
 - Stylized Checkbox animation with SVG
 - Button to toggle tooltip functionality
-- Character background, inspirations, and motivations
+- Auto-complete selections populate based on race, class, and level.
 - Quest Journal
