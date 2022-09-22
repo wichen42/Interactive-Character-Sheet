@@ -8,15 +8,24 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 **<ins>Functionality & MVPs</ins>**
 
-- Character Input fields that a player can edit.
-- Character sprite model visualization via Canvas.
-- Tool tips over character attributes, proficiency, and skills.
-- Character EXP tracker.
-- Character equipment weight tracker.
+**The Character Sheet contains features that**
+
+<br>
+
+-Dynamically updates based on user input and selections
+
+-Animates Character Sprites
+
+-Auto-complete Search
+
+
+<br>
+
+
 
 In addtion, this project will include: 
 - An About Modal describing the API used to generate tooltips.
-- This Production README.
+- This README.
 
 <br>
 
