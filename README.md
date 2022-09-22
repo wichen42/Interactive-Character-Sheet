@@ -27,18 +27,88 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 <br>
 
--Dynamically updates based on user input and selections
+- Dynamically updates based on user input and selections
 
 <br>
 
 ![cs_statmod](https://user-images.githubusercontent.com/103459101/191825331-a3ef6955-a26a-4df1-a797-31b94671d17d.gif)
+
+<br>
+
+Element values updates based on selected values.
+
+```javascript
+function stat_mod () {
+
+    let str = document.getElementById("str");
+    let str_mod = document.querySelector(".str_mod");
+    
+    for(let i = 1; i < 21; i++) {
+        var opt = document.createElement('option');
+        opt.value = i;
+        opt.innerHTML = i;
+        str.appendChild(opt);
+    }
+    
+    str.addEventListener("change", function(e) {
+        let s_mod = Math.floor((str.value - 10)/2);
+        if (s_mod < 0) {
+            str_mod.innerHTML = s_mod
+        } else {
+            str_mod.innerHTML = `+${s_mod}`;
+        }
+    })
+}
+```
+
 <br>
 
 ![cs_hitdice](https://user-images.githubusercontent.com/103459101/191825321-eceb0248-35cf-4bbe-825a-06f07d3ec6ff.gif)
-<br>
 
 <br>
--Animates Character Sprites
+
+Logic changes depending on class selected and updates the correct input fields.
+
+```javascript
+function hit_dice () {
+    let player_class;
+    const temp = document.getElementById("temp-hp");
+    const die = document.getElementById("hit-dice");
+
+    let classes = ["warrior", "thief", "mage", "archer"]
+
+    classes.forEach(el => {
+        player = `${el}-radio`
+        if (document.getElementById(player).checked === true) {
+            player_class = document.getElementById(player);
+        }
+    })
+
+
+    if (player_class.value === "warrior") {
+        console.log("warrior");
+        temp.value = Math.floor(Math.random() * 9) + 1
+    } else if (player_class.value === "thief") {
+        console.log("thief");
+        temp.value = Math.floor(Math.random() * 5) + 1
+    } else if (player_class.value === "mage") {
+        console.log("mage");
+        temp.value = Math.floor(Math.random() * 5) + 1
+    } else if (player_class.value === "archer") {
+        console.log("archer");
+        temp.value = Math.floor(Math.random() * 6) + 1
+    }
+}
+
+let dice = document.getElementById('hit-dice');
+dice.addEventListener("click", function(){
+    hit_dice();
+})
+```
+
+<br>
+
+- Animates Character Sprites
 
 <br>
 
@@ -93,7 +163,7 @@ Sprite Animation occurs on canvas via drawImage and simple loop logic. Script ut
 
 <br>
 
--Auto-complete Search
+- Auto-complete Search
 
 <br>
 
@@ -139,7 +209,7 @@ addAttack.addEventListener("click", function(){
 
 <br>
 
--Generates tooltip that pulls from DnD 5e API
+- Generates tooltip that pulls from DnD 5e API
 
 <br>
 
@@ -225,6 +295,7 @@ This project will be implemented with the following technologies:
 - Webpack and Babel to bundles and transpile source code.
 - Canvas API
 - jQuery Autocomplete 
+- Landing page
 - npm to manage dependencies. 
 
 <br>
