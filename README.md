@@ -28,28 +28,101 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 <br>
 
 -Dynamically updates based on user input and selections
+
 <br>
+
 ![cs_statmod](https://user-images.githubusercontent.com/103459101/191825331-a3ef6955-a26a-4df1-a797-31b94671d17d.gif)
 <br>
+
 ![cs_hitdice](https://user-images.githubusercontent.com/103459101/191825321-eceb0248-35cf-4bbe-825a-06f07d3ec6ff.gif)
 <br>
+
+<br>
 -Animates Character Sprites
+
 <br>
+
 ![sprite_animation](https://user-images.githubusercontent.com/103459101/191825344-f5968819-c91e-4a52-90f2-d8cae7825569.gif)
+
 <br>
+
+<br>
+
 -Auto-complete Search
+
 <br>
+
 ![addAttack](https://user-images.githubusercontent.com/103459101/191825121-0ee5a9c3-2c00-4cd5-8ca7-5542d06fe0da.gif)
+
 <br>
+
 -Generates tooltip that pulls from DnD 5e API
+
 <br>
+
 ![tooltip](https://user-images.githubusercontent.com/103459101/191825342-3d8b3221-b7b8-4dd5-8fee-6f63f2cec538.gif)
 
 <br>
 
+```javascript
+  <section id="survival">
+    <label for="survival" id="survival-label" data-url="https://www.dnd5eapi.co/api/skills/survival">Survival</label>
+    <input type="checkbox" name="survival-checkbox" id="survivial">
+  </section>
+  
+      document.addEventListener("mouseover", function(e) {
+        let item = e.target;
+        let tooltip = document.querySelector(".tooltip");
 
+        async function makeTooltip(url) {
+            const response = await fetch(url);
 
+            if(!response.ok) {
+                throw new Error('Network response was not OK.');
+            }
 
+            const data = response.json();
+            return data;
+        }
+
+        makeTooltip(item.dataset.url)
+            .then (data => {
+                tooltip.innerHTML = data.desc;
+                console.log(item.offsetWidth)
+                console.log(item.offsetHeight)
+                tooltip.style.top = item.offsetTop + "px";
+                tooltip.style.left = item.offsetLeft + "px";
+                tooltip.style.opacity = 1;
+                tooltip.style.transitionDuration = "1s"
+
+                let button = document.createElement("BUTTON");
+                button.innerHTML = "X"
+                button.style.position = "absolute";
+                button.style.top = 0;
+                button.style.right = 0;
+                button.style.bottom = 5;
+                button.style.left = 20;
+                button.style.borderRadius = "4px";
+                tooltip.appendChild(button);
+
+                button.addEventListener("click", function(e) {
+                    tooltip.innerHTML = "";
+                    tooltip.style.opacity = 0;
+                    tooltip.style.transitionDuration = "1s"
+                    tooltip.style.top = 0;
+                    tooltip.style.left = 0;
+
+                })
+            })
+            .catch (error => {
+                console.log('There has been a problem with fetch operation.', error);
+            })
+
+    });
+```
+<br>
+
+<br>
 
 In addtion, this project will include: 
 - An About Modal describing the API used to generate tooltips.
@@ -69,10 +142,6 @@ This project will be implemented with the following technologies:
 - npm to manage dependencies. 
 
 <br>
-
-**<ins>Implementation Timeline</ins>**
-
-
 
 <br>
 
