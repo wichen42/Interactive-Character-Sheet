@@ -164,8 +164,7 @@ table {
     grid-auto-rows: 1fr;
     width: 100%;
     background-color: rgba(251, 247, 245, 0.89);
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
 .character-sheet-survival-stats {
@@ -705,7 +704,7 @@ display: inline-flex;
     align-items: center;
     background-color: rgba(251, 247, 245, 0.89);
     justify-content: space-evenly;
-
+    padding-bottom: 15px;
 }
 
 #model-canvas {
