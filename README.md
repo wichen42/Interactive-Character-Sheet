@@ -276,15 +276,8 @@ Elements store an api endpoint in a data attribute. On hover script fires in the
 
 <br>
 
-In addtion, this project will include: 
-- An About Modal describing the API used to generate tooltips.
-- This README.
 
-<br>
-
-
-
-**<ins>Technologies, Libraries, and APIs</ins>**
+**Technologies, Libraries, and APIs**
 
 This project will be implemented with the following technologies:
 - The 5th Edition Dungeons and Dragons API: https://www.dnd5eapi.co/
@@ -296,9 +289,7 @@ This project will be implemented with the following technologies:
 
 <br>
 
-<br>
-
-**<ins>Bonus features:</ins>**
+**Bonus features:**
 
 There are many sections on a character sheet that can be included that may not have an effect on overall gameplay. Some of these seections are: 
 
@@ -312,3 +303,9 @@ There are many sections on a character sheet that can be included that may not h
 - Wizard Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/wizard-pack
 - Huntresss Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/huntress-2
 - Wind Hashin Sprite Pack: created by chierit - https://chierit.itch.io/elementals-wind-hashashin
+
+<br>
+
+In addtion, this project will include: 
+- An About Modal describing the API used to generate tooltips.
+- This README.
