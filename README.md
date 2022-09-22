@@ -14,6 +14,8 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 -Dynamically updates based on user input and selections
 
+![addAttack](https://user-images.githubusercontent.com/103459101/191825121-0ee5a9c3-2c00-4cd5-8ca7-5542d06fe0da.gif)
+
 -Animates Character Sprites
 
 -Auto-complete Search
