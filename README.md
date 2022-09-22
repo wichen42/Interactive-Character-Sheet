@@ -306,3 +306,9 @@ There are many sections on a character sheet that can be included that may not h
 - Button to toggle tooltip functionality
 - Auto-complete selections populate based on race, class, and level.
 - Quest Journal
+
+**Acknowledgment and Credits**
+- Knight Sprite Pack: created by aamatniekss - https://aamatniekss.itch.io/fantasy-knight-free-pixelart-animated-character
+- Wizard Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/wizard-pack
+- Huntresss Sprite Pack: created by LuizMelo - https://luizmelo.itch.io/huntress-2
+- Wind Hashin Sprite Pack: created by chierit - https://chierit.itch.io/elementals-wind-hashashin
