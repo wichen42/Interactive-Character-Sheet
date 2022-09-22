@@ -13,6 +13,7 @@ const add_attack = require('./scripts/add_attack');
 const hit_dice = require('./scripts/hit_dice');
 const speed_gen = require('./scripts/stat_gen');
 const perception_gen = require('./scripts/perception_gen');
+const race_text = require('./scripts/race_text');
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -125,13 +126,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 tooltip.style.left = item.offsetLeft + "px";
                 tooltip.style.opacity = 1;
                 tooltip.style.transitionDuration = "1s"
-                
-                item.addEventListener("mouseleave", function(e) {
+
+                let button = document.createElement("BUTTON");
+                button.innerHTML = "X"
+                button.style.position = "absolute";
+                button.style.top = 0;
+                button.style.right = 0;
+                button.style.bottom = 5;
+                button.style.left = 10;
+                button.style.borderRadius = "5px";
+                tooltip.appendChild(button);
+
+                button.addEventListener("click", function(e) {
                     tooltip.innerHTML = "";
                     tooltip.style.opacity = 0;
                     tooltip.style.transitionDuration = "1s"
-                    tooltip.style.top = 500;
-                    tooltip.style.left = 500;
+                    tooltip.style.top = 0;
+                    tooltip.style.left = 0;
 
                 })
             })
@@ -187,6 +198,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let wisdom_stat = document.getElementById("wis");
     wisdom_stat.addEventListener("change", function(){
         perception_gen();
+    })
+
+
+    let race = document.getElementById("background-select");
+    race.addEventListener("change", function(){
+        race_text();
     })
 
     autoEquip();

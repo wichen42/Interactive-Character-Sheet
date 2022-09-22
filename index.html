@@ -62,15 +62,26 @@
           </div>
           <div id="character-details-section-2">
             <section id="race">
-              <label for="background-select">Race:</label>
-              <select id="background-select">
-                <option value="default">Please Select</option>
-                <option id="dwarf" value="dwarf">Dwarf</option>
-                <option id="elf" value="elf">Elf</option>
-                <option id="half-orc" value="half-orc">Half-orc</option>
-                <option id="human" value="human">Human</option>
-                <option id="tiefling" value="tiefling">Tiefling</option>
-              </select>
+              <section id="race-select">
+                <label for="background-select">Race:</label>
+                <select id="background-select">
+                  <option value="default">Please Select</option>
+                  <option id="dwarf" value="dwarf">Dwarf</option>
+                  <option id="elf" value="elf">Elf</option>
+                  <option id="half-orc" value="half-orc">Half-orc</option>
+                  <option id="human" value="human">Human</option>
+                  <option id="tiefling" value="tiefling">Tiefling</option>
+                </select>
+              </section>
+
+              <section id="race-text">
+                <span id="dwarf-text">"It's Hammer Time"</span>
+                <span id="human-text">"Nothing wrong with vanilla"</span>
+                <span id="elf-text">"Not Legolas"</span>
+                <span id="half-orc-text">"What does the Half-Orc say?"</span>
+                <span id="thiefling-text">"Demon was copyrighted"</span>
+              </section>
+
             </section>
             <section id="ailment">Status: 
               <section id="poison-section">
@@ -164,9 +175,30 @@
             <section id="constitution-skills">
               <label class="attribute" data-url="https://www.dnd5eapi.co/api/ability-scores/con">Constitution</label>
               <section id="con-saving-throw">
-                <label for="acrobatics" id="con-saving-throw-label" data-url="https://www.dnd5eapi.co/api/rule-sections/saving-throws">Saving Throw</label>
+                <label for="con-saving-throw" id="con-saving-throw-label" data-url="https://www.dnd5eapi.co/api/rule-sections/saving-throws">Saving Throw</label>
                 <input type="checkbox" name="constitution-saving-throw" id="con-saving-throw">
+
+
+                <!-- <div class="checkbox">
+                  <input type="checkbox" class="check" id="check3" />
+                  
+                  <label for="check3" class="label" style="position:absolute;left:0;margin-top:20px">
+                    
+                    <svg width="500" height="50" viewBox="0 0 500 100">
+                      <rect x="-220" y="0" width="50" height="50" stroke="black" fill="none"/>
+                      
+                      <g transform="translate(0,-972.36216)">
+                        <path d="m 230,980 -166,5 c -709,22 289,89 215,18 -37,-36 -537,-46 -478,23" stroke="black" fill="none" class="path2" stroke-width="3" />
+                      </g>
+                    </svg>
+                      
+                    
+                  </label>
+                </div> -->
+
               </section>
+
+
             </section>
           </div>
   
@@ -428,7 +460,6 @@
     </div>
 
     <div class="tooltip">
-              
     </div>
 
   </body>

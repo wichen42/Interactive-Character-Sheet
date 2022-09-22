@@ -16,8 +16,6 @@ function speed_gen() {
         speed_input.value = 30;
     }
 
-    
-
 
 
 }

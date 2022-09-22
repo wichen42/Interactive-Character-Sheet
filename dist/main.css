@@ -670,6 +670,7 @@ display: inline-flex;
     align-items: center;
     width: 100%;
     height: 50%;
+    justify-content: space-evenly;
 }
 
 #background-select {
@@ -677,6 +678,27 @@ display: inline-flex;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     font-family: dnd;
     font-size: 24px;
+}
+
+
+#dwarf-text {
+    display: none;
+}
+
+#human-text {
+    display: none;
+}
+
+#elf-text {
+    display: none;
+}
+
+#half-orc-text {
+    display: none;
+}
+
+#tiefling-text {
+    display: none;
 }
 
 #ailment {
