@@ -222,10 +222,6 @@ Elements store an api endpoint in a data attribute. On hover script fires in the
 
 <br>
 ```javascript
-  <section id="survival">
-    <label for="survival" id="survival-label" data-url="https://www.dnd5eapi.co/api/skills/survival">Survival</label>
-    <input type="checkbox" name="survival-checkbox" id="survivial">
-  </section>
   
       document.addEventListener("mouseover", function(e) {
         let item = e.target;
