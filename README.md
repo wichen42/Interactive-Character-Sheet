@@ -112,7 +112,7 @@ dice.addEventListener("click", function(){
 
 <br>
 
-![sprite_animation](https://user-images.githubusercontent.com/103459101/191825344-f5968819-c91e-4a52-90f2-d8cae7825569.gif)
+![atk_sprite](https://user-images.githubusercontent.com/103459101/191833968-fc4a68f2-8558-48b3-80e9-8199e1d9ef4a.gif)
 
 <br>
 
