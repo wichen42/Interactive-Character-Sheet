@@ -6,6 +6,21 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 
 <br>
 
+**<ins>Wireframes</ins>**
+
+<br>
+
+![wireframe](https://user-images.githubusercontent.com/103459101/191825910-26d774aa-7bf8-407d-b69a-56128daf839d.png)
+
+<br>
+
+- Nav Bar displays general character details including name, class, race, state, status and links to GitHub, LinkedIn.
+- Body of the character sheet is comprised of three main components. 
+    1. First section contains character skills, stat points, and stat modifiers.
+    2. Second section is divided into two parts. The first contains Misc character stats such as Health, Armor Class, Temporary HP, speed, proficiency, perception, as well as buttons to generate Temporary HP amount, and initiative. The second contains an equipment and inventory list.
+    3. Third section conatins two parts. The first houses the canvas where character sprites are animated. The second contains a list of attacks and spells.
+<br>
+
 **<ins>Functionality & MVPs</ins>**
 
 **The Character Sheet contains features that**
@@ -42,21 +57,7 @@ In addtion, this project will include:
 
 <br>
 
-**<ins>Wireframes</ins>**
 
-<br>
-
-![wireframe](https://user-images.githubusercontent.com/103459101/191825910-26d774aa-7bf8-407d-b69a-56128daf839d.png)
-
-<br>
-
-- Nav Bar displays general character details including name, class, race, state, status and links to GitHub, LinkedIn.
-- Body of the character sheet is comprised of three main components. 
-    1. First section contains character skills, stat points, and stat modifiers.
-    2. Second section is divided into two parts. The first contains Misc character stats such as Health, Armor Class, Temporary HP, speed, proficiency, perception, as well as buttons to generate Temporary HP amount, and initiative. The second contains an equipment and inventory list.
-    3. Third section conatins two parts. The first houses the canvas where character sprites are animated. The second contains a list of attacks and spells.
-
-<br>
 
 **<ins>Technologies, Libraries, and APIs</ins>**
 
