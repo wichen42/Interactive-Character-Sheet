@@ -220,6 +220,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
 
+
+
     autoEquip();
     stat_mod();
     animate();

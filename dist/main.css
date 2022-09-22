@@ -847,13 +847,19 @@ button {
   height: 100px;
   width: 400px;
   overflow-y: auto;
-  background: lightgray;
+  background: rgb(233, 233, 233);
   color: black;
   padding: 10px 20px;
   margin: 20px;
   border: 1px solid black;
   z-index: 9001;
   border-radius: 15px;
+}
+
+.tooltip-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .tooltip::-webkit-scrollbar {
@@ -871,4 +877,14 @@ button {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
+
+.ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+  background: #6693bc !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+}
+
+.ui-autocomplete {
+  background-color: inherit;
 }
