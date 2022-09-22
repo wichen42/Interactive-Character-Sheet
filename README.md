@@ -221,8 +221,8 @@ addAttack.addEventListener("click", function(){
 Elements store an api endpoint in a data attribute. On hover script fires in the background to fetch data from the DnD 5e API. The tooltips's innerHTML is then populated with the data and moves to the "hovered" element's position. Tooltip size is predefined, if there is a large amount of data user is able to hover over tooltip to scroll up / down. An exit button is also dynamically created and appended to the tooltip.
 
 <br>
+
 ```javascript
-  
       document.addEventListener("mouseover", function(e) {
         let item = e.target;
         let tooltip = document.querySelector(".tooltip");
@@ -273,7 +273,6 @@ Elements store an api endpoint in a data attribute. On hover script fires in the
 
     });
 ```
-<br>
 
 <br>
 
