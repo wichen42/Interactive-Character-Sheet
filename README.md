@@ -307,5 +307,6 @@ There are many sections on a character sheet that can be included that may not h
 <br>
 
 In addtion, this project will include: 
+- [Link to Github Page](https://wichen42.github.io/Interactive-Character-Sheet/)
 - An About Modal describing the API used to generate tooltips.
 - This README.
