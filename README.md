@@ -13,15 +13,21 @@ Before the campaign begins DMs and players will often have a Session 0, where th
 <br>
 
 -Dynamically updates based on user input and selections
-
-![addAttack](https://user-images.githubusercontent.com/103459101/191825121-0ee5a9c3-2c00-4cd5-8ca7-5542d06fe0da.gif)
+![cs_statmod](https://user-images.githubusercontent.com/103459101/191825331-a3ef6955-a26a-4df1-a797-31b94671d17d.gif)
+![cs_hitdice](https://user-images.githubusercontent.com/103459101/191825321-eceb0248-35cf-4bbe-825a-06f07d3ec6ff.gif)
 
 -Animates Character Sprites
+![sprite_animation](https://user-images.githubusercontent.com/103459101/191825344-f5968819-c91e-4a52-90f2-d8cae7825569.gif)
 
 -Auto-complete Search
+![addAttack](https://user-images.githubusercontent.com/103459101/191825121-0ee5a9c3-2c00-4cd5-8ca7-5542d06fe0da.gif)
 
+-Generates tooltip that pulls from DnD 5e API
+![tooltip](https://user-images.githubusercontent.com/103459101/191825342-3d8b3221-b7b8-4dd5-8fee-6f63f2cec538.gif)
 
 <br>
+
+
 
 
 
