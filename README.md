@@ -176,6 +176,7 @@ Auto-complete search funtionality is achieved with the jQuery auto-complete libr
 <br>
 
 ```javascript
+
 function add_attack() {
 
     const searched = document.getElementById('attack-bar');
